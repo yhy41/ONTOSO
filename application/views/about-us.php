@@ -10,72 +10,23 @@
     <title>ONTOSO</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/font-awesome.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/elegant-icons.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/themify-icons.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/nice-select.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/jquery-ui.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/owl.carousel.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/magnific-popup.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/slicknav.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>" type="text/css">
 </head>
 
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Offcanvas Menu Section Begin -->
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="canvas-open">
-        <i class="icon_menu"></i>
-    </div>
-    <div class="offcanvas-menu-wrapper">
-        <div class="canvas-close">
-            <i class="icon_close"></i>
-        </div>
-        <nav class="main-menu">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./property.html">Properti</a></li>
-                <li><a href="./about-us.html">Tentang Kami</a></li>
-                <li><a href="./contact.html">Kontak</a></li>
-            </ul>
-        </nav>
-        <div class="nav-logo-right">
-            <ul>
-                <li>
-                    <i class="icon_phone"></i>
-                    <div class="info-text">
-                        <span>Phone:</span>
-                        <p>(+12) 345 6789</p>
-                    </div>
-                </li>
-                <li>
-                    <i class="icon_map"></i>
-                    <div class="info-text">
-                        <span>Alamat:</span>
-                        <p>16 Creek Ave, <span>NY</span></p>
-                    </div>
-                </li>
-                <li>
-                    <i class="icon_mail"></i>
-                    <div class="info-text">
-                        <span>Email:</span>
-                        <p>Info.cololib@gmail.com</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- Offcanvas Menu Section End -->
-
     <!-- Header Section Begin -->
     <header class="header-section">
         <div class="top-nav navbar-dark">
@@ -85,10 +36,10 @@
                         <nav class="main-menu">
                             <ul>
                                 <li class="navbar-brand">ONTOSO</li>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./property.html">Properti</a></li>
-                                <li><a href="./about-us.html">Tentang Kami</a></li>
-                                <li><a href="./contact.html">Kontak</a></li>
+                                <li><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
+                                <li><a href="<?php echo site_url('web/property'); ?>">Properti</a></li>
+                                <li class="active"><a href="<?php echo site_url('web/aboutus'); ?>">Tentang Kami</a></li>
+                                <li><a href="<?php echo site_url('web/contact'); ?>">Kontak</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -97,35 +48,95 @@
         </div>
     </header>
     <!-- Header End -->
+
+    <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="breadcrumb-text">
-                                <h2>Pembayaran</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </section>
-    <section class="about-section spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 offset-lg-1">
-                    <img src="https://1.bp.blogspot.com/-pBKWWv4H0YY/V15O0ZSZO9I/AAAAAAAAAJE/Xps9eUzp6q8hLNuvYTCtm9CaiyAdiaoCACKgB/s1600/Bank-Mandiri-Logo-Vector-Image.png">
-                </div>
-                <div class="col-lg-7"><br>
-                    <p style="font-size: 18px">Pengguna yang terhormat Budi Budiman, <br><br>
-                        Batas waktu pembayaran anda adalah 23:59:46<br>
-                        Mohon selesaikan pembayaran sebelum <strong>9:51 AM 18 Apr 2020</strong><br><br>
-                        Kode Bayar Bank Mandiri : <strong>789767668769</strong>
-                        <br>
-                        Jumlah Bayar : <strong>Rp. 12000000</strong><br>
-                    </p>
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <h2>Tentang Kami</h2>
+                        <div class="breadcrumb-option">
+                            <a href="#"><i class="fa fa-home"></i> Home</a>
+                            <span>Tentang Kami</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Breadcrumb Section Begin -->
+
+    <!-- About Section Begin -->
+    <section class="about-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Tentang Kami</span>
+                        <h2>Hello! Selamat Datang DI Ontoso<span>.</span></h2>
+                        <p>di sini tidak ada kampanye iklan yang lebih baik yang berbiaya rendah dan juga sukses secara bersamaan. Ide bisnis yang hebat ketika digunakan secara efektif dapat menghemat banyak uang. Ini tidak hanya mudah bagi mereka yang bekerja penuh waktu sebagai pengiklan, tetapi juga bagi mereka yang bekerja dari rumah. Beriklan dari rumah juga merupakan pilihan berbiaya rendah, yang melibatkan pembuatan dan pendistribusian selebaran. involves making and
+                            distributing fliers.</p>
+                    </div>
+                    <div class="video-text set-bg" data-setbg="<?php echo base_url('assets/img/video-bg.jpg'); ?>">
+                        <a href="" class="play-btn video-popup"><i
+                                class="fa fa-play"></i></a>
+                        <h4>Find The Perfect</h4>
+                        <h2>Real Estate Agent Near You</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="about-text">
+                                <h4>Cerita Kita</h4>
+                                <p>Dimana sekrang sangat sulit nya mencari rumha yang layak untuk di tinggali apa lagi sekarang sudah meledaknya urbanisasi yang menyulitykan orang-orang untuk mencari rumah khususnya di kawasan kawasan terntu untuk itu kami hadir untuk menjamin kelayakan dan kenyaman anda untuk mencari hunian yang anda impikan.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-text">
+                                <h4>Visi Kami</h4>
+                                <p>Tidak akan pulang kerja sebelum anda belum puas,tak akan luntur semangat untuk menyediakan hunian yang anda impikan dan tidak akan puas untuk mencari kan hunian yang anda impikan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial-section set-bg spad" data-setbg="<?php echo base_url('assets/img/testimonial-bg.jpg'); ?>">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Testimonials</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="testimonial-slider owl-carousel">
+                        <div class="ts-item">
+                            <p>Aplikasi ini sangat memudahkan kaum urban yang ingin mencari hunian yang mereka impikan dan sangat responsi (agen) untuk melayani,salah satu starp up yang patut untuk di beri investasi #ontoso</p>
+                            <div class="ti-author">
+                                <h5>Ridawan Kamil</h5>
+                                <span>Gubenur Jawa Barat</span>
+                            </div>
+                        </div>
+                        <div class="ts-item">
+                            <p>Aplikasi ini adalah suatu inovasi dan harapan dari setiap orang yang igin mencari hunian yang mereka damba dambakan,dan ini adalah salah satu karya anak bangsa yang patut kita suport #ontoso</p>
+                            <div class="ti-author">
+                                <h5>Nadiem Makarim</h5>
+                                <span>EX CEO GO-jek dan Mentri Pendidikan RI </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
 
     <!-- Agent Section Begin -->
     <section class="agent-section spad">
@@ -143,7 +154,7 @@
                     <div class="col-lg-3">
                         <div class="single-agent">
                             <div class="sa-pic">
-                                <img src="img/agent/agent-1.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/agent/agent-1.jpg'); ?>" alt="">
                                 <div class="hover-social">
                                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -156,7 +167,7 @@
                     <div class="col-lg-3">
                         <div class="single-agent">
                             <div class="sa-pic">
-                                <img src="img/agent/agent-2.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/agent/agent-2.jpg'); ?>" alt="">
                                 <div class="hover-social">
                                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -169,7 +180,7 @@
                     <div class="col-lg-3">
                         <div class="single-agent">
                             <div class="sa-pic">
-                                <img src="img/agent/agent-3.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/agent/agent-3.jpg'); ?>" alt="">
                                 <div class="hover-social">
                                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -182,7 +193,7 @@
                     <div class="col-lg-3">
                         <div class="single-agent">
                             <div class="sa-pic">
-                                <img src="img/agent/agent-4.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/agent/agent-4.jpg'); ?>" alt="">
                                 <div class="hover-social">
                                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -195,7 +206,7 @@
                     <div class="col-lg-3">
                         <div class="single-agent">
                             <div class="sa-pic">
-                                <img src="img/agent/agent-5.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/agent/agent-5.jpg'); ?>" alt="">
                                 <div class="hover-social">
                                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -246,7 +257,7 @@
     <!-- Partner Carousel Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+    <footer class="footer-section set-bg" data-setbg="<?php echo base_url('assets/img/footer-bg.jpg'); ?>">
         <div class="container">
             <div class="footer-text">
                 <div class="row">
@@ -302,14 +313,14 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo base_url('assets/js/jquery-3.3.1.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.magnific-popup.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.nice-select.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.slicknav.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery-ui.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/owl.carousel.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </body>
 
 </html>

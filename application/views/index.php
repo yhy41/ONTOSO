@@ -13,69 +13,19 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/font-awesome.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/elegant-icons.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/themify-icons.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/nice-select.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/jquery-ui.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/owl.carousel.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/magnific-popup.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/slicknav.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>" type="text/css">
 </head>
 
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Offcanvas Menu Section Begin -->
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="canvas-open">
-        <i class="icon_menu"></i>
-    </div>
-    <div class="offcanvas-menu-wrapper">
-        <div class="canvas-close">
-            <i class="icon_close"></i>
-        </div>
-        <nav class="main-menu">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./property.html">Properti</a></li>
-                <li><a href="./about-us.html">Tentang Kami</a></li>
-                <li><a href="./contact.html">Kontak</a></li>
-            </ul>
-        </nav>
-        <div class="nav-logo-right">
-            <ul>
-                <li>
-                    <i class="icon_phone"></i>
-                    <div class="info-text">
-                        <span>Phone:</span>
-                        <p>(+12) 345 6789</p>
-                    </div>
-                </li>
-                <li>
-                    <i class="icon_map"></i>
-                    <div class="info-text">
-                        <span>Alamat:</span>
-                        <p>16 Creek Ave, <span>NY</span></p>
-                    </div>
-                </li>
-                <li>
-                    <i class="icon_mail"></i>
-                    <div class="info-text">
-                        <span>Email:</span>
-                        <p>Info.cololib@gmail.com</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- Offcanvas Menu Section End -->
-
     <!-- Header Section Begin -->
     <header class="header-section">
         <div class="top-nav navbar-dark">
@@ -85,10 +35,10 @@
                         <nav class="main-menu">
                             <ul>
                                 <li class="navbar-brand">ONTOSO</li>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./property.html">Properti</a></li>
-                                <li><a href="./about-us.html">Tentang Kami</a></li>
-                                <li><a href="./contact.html">Kontak</a></li>
+                                <li class="active"><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
+                                <li><a href="<?php echo site_url('web/property'); ?>">Properti</a></li>
+                                <li><a href="<?php echo site_url('web/aboutus'); ?>">Tentang Kami</a></li>
+                                <li><a href="<?php echo site_url('web/contact'); ?>">Kontak</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -105,7 +55,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <div class="hero-text">
+                            <div class="hero-text" onclick="<?php echo base_url('application/views/property-details.php'); ?>">
                                 <p class="room-location"><i class="icon_pin"></i> Jl. Mutiara Boulevard, Exit Tol Ir. Sutami No.KM 8, Makassar, Sulawesi Selatan</p>
                                 <h2>Summarecon Mutiara<br> Makassar</h2>
                                 <div class="room-price">
@@ -135,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-item set-bg" data-setbg="img/hero/hero-1.jpg">
+            <div class="single-hero-item set-bg" data-setbg="<?php echo base_url('assets/img/hero/hero-1.jpg'); ?>">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
@@ -169,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-item set-bg" data-setbg="img/hero/hero-2.jpg">
+            <div class="single-hero-item set-bg" data-setbg="<?php echo base_url('assets/img/hero/hero-2.jpg'); ?>">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
@@ -210,10 +160,10 @@
                     <img src="https://sg1-cdn.pgimgs.com/developer-listing/4342318/OUPHO.114072692.V800/Summarecon-Mutiara-Makassar-Makassar-Indonesia.jpg" style="width: 164px; height: 94px">
                 </div>
                 <div class="item">
-                    <img src="img/hero/hero-1.jpg" style="width: 164px; height: 94px">
+                    <img src="<?php echo base_url('assets/img/hero/hero-1.jpg'); ?>" style="width: 164px; height: 94px">
                 </div>
                 <div class="item">
-                    <img src="img/hero/hero-2.jpg" style="width: 164px; height: 94px">
+                    <img src="<?php echo base_url('assets/img/hero/hero-2.jpg'); ?>" style="width: 164px; height: 94px">
                 </div>
             </div>
         </div>
@@ -287,21 +237,21 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="single-howit-works">
-                        <img src="img/howit-works/howit-works-1.png" alt="">
+                        <img src="<?php echo base_url('assets/img/howit-works/howit-works-1.png'); ?>" alt="">
                         <h4>Cari dan Temukan Hunian</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="single-howit-works">
-                        <img src="img/howit-works/howit-works-2.png" alt="">
+                        <img src="<?php echo base_url('assets/img/howit-works/howit-works-2.png'); ?>" alt="">
                         <h4>Temukan Ruang</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="single-howit-works">
-                        <img src="img/howit-works/howit-works-3.png" alt="">
+                        <img src="<?php echo base_url('assets/img/howit-works/howit-works-3.png'); ?>" alt="">
                         <h4>Hubungi Agen</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
@@ -373,7 +323,7 @@
 
                     <div class="col-lg-4">
                         <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="img/hero/hero-1.jpg">
+                            <div class="fi-pic set-bg" data-setbg="<?php echo base_url('assets/img/hero/hero-1.jpg'); ?>">
                                 <div class="pic-tag">
                                     <div class="f-text">feauture</div>
                                     <div class="s-text">Untuk Dijual</div>
@@ -546,7 +496,7 @@
                     <div class="col-lg-3">
                         <div class="single-agent">
                             <div class="sa-pic">
-                                <img src="img/agent/agent-1.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/agent/agent-1.jpg'); ?>" alt="">
                                 <div class="hover-social">
                                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -559,7 +509,7 @@
                     <div class="col-lg-3">
                         <div class="single-agent">
                             <div class="sa-pic">
-                                <img src="img/agent/agent-2.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/agent/agent-2.jpg'); ?>" alt="">
                                 <div class="hover-social">
                                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -572,7 +522,7 @@
                     <div class="col-lg-3">
                         <div class="single-agent">
                             <div class="sa-pic">
-                                <img src="img/agent/agent-3.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/agent/agent-3.jpg'); ?>" alt="">
                                 <div class="hover-social">
                                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -585,7 +535,7 @@
                     <div class="col-lg-3">
                         <div class="single-agent">
                             <div class="sa-pic">
-                                <img src="img/agent/agent-4.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/agent/agent-4.jpg'); ?>" alt="">
                                 <div class="hover-social">
                                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -598,7 +548,7 @@
                     <div class="col-lg-3">
                         <div class="single-agent">
                             <div class="sa-pic">
-                                <img src="img/agent/agent-5.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/agent/agent-5.jpg'); ?>" alt="">
                                 <div class="hover-social">
                                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -649,7 +599,7 @@
     <!-- Partner Carousel Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+    <footer class="footer-section set-bg" data-setbg="<?php echo base_url('assets/img/footer-bg.jpg'); ?>">
         <div class="container">
             <div class="footer-text">
                 <div class="row">
@@ -705,14 +655,14 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo base_url('assets/js/jquery-3.3.1.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.magnific-popup.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.nice-select.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.slicknav.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery-ui.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/owl.carousel.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </body>
 
 </html>

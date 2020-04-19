@@ -14,69 +14,19 @@
         rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/font-awesome.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/elegant-icons.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/themify-icons.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/nice-select.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/jquery-ui.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/owl.carousel.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/magnific-popup.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/slicknav.min.css'); ?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>" type="text/css">
 </head>
 
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Offcanvas Menu Section Begin -->
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="canvas-open">
-        <i class="icon_menu"></i>
-    </div>
-    <div class="offcanvas-menu-wrapper">
-        <div class="canvas-close">
-            <i class="icon_close"></i>
-        </div>
-        <nav class="main-menu">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./property.html">Properti</a></li>
-                <li><a href="./about-us.html">Tentang Kami</a></li>
-                <li><a href="./contact.html">Kontak</a></li>
-            </ul>
-        </nav>
-        <div class="nav-logo-right">
-            <ul>
-                <li>
-                    <i class="icon_phone"></i>
-                    <div class="info-text">
-                        <span>Phone:</span>
-                        <p>(+12) 345 6789</p>
-                    </div>
-                </li>
-                <li>
-                    <i class="icon_map"></i>
-                    <div class="info-text">
-                        <span>Alamat:</span>
-                        <p>16 Creek Ave, <span>NY</span></p>
-                    </div>
-                </li>
-                <li>
-                    <i class="icon_mail"></i>
-                    <div class="info-text">
-                        <span>Email:</span>
-                        <p>Info.cololib@gmail.com</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- Offcanvas Menu Section End -->
-
     <!-- Header Section Begin -->
     <header class="header-section">
         <div class="top-nav navbar-dark">
@@ -86,10 +36,10 @@
                         <nav class="main-menu">
                             <ul>
                                 <li class="navbar-brand">ONTOSO</li>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./property.html">Properti</a></li>
-                                <li><a href="./about-us.html">Tentang Kami</a></li>
-                                <li><a href="./contact.html">Kontak</a></li>
+                                <li><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
+                                <li><a href="<?php echo site_url('web/property'); ?>">Properti</a></li>
+                                <li><a href="<?php echo site_url('web/aboutus'); ?>">Tentang Kami</a></li>
+                                <li class="active"><a href="<?php echo site_url('web/contact'); ?>">Kontak</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -197,7 +147,7 @@
     <!-- Partner Carousel Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+    <footer class="footer-section set-bg" data-setbg="<?php echo base_url('img/footer-bg.jpg'); ?>">
         <div class="container">
             <div class="footer-text">
                 <div class="row">
@@ -253,14 +203,14 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo base_url('assets/js/jquery-3.3.1.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.magnific-popup.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.nice-select.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.slicknav.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery-ui.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/owl.carousel.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
 </body>
 
 </html>
