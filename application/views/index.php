@@ -23,6 +23,17 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/magnific-popup.css'); ?>" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/slicknav.min.css'); ?>" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>" type="text/css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- Custom Style -->
+    <style>
+    </style>
+ 
+
 </head>
 
 <body>
@@ -181,40 +192,52 @@
                             Temukan Rumah Anda
                         </div>
                     </div>
-                    <form action="#" class="filter-form">
-                        <div class="first-row">
-                            <select>
-                                <option value="">Villa & Kolam Renang</option>
-                            </select>
-                            <select>
-                                <option value="">Kota</option>
-                            </select>
-                            <select>
-                                <option value="">Kamar Tidur</option>
-                            </select>
-                            <select>
-                                <option value="">Kamar Mandi</option>
-                            </select>
+                    <form action="#" class="filter-form"> 
+                        <div class="form-group row mb-4">
+                            <div class="col">
+                                    <select id="cari_belisewa" class="form-control">
+                                      <option disabled selected>Beli / Sewa</option>
+                                    </select>
+                                </div>
+                            <div class="col">
+                                <select id="cari_kota" class="form-control">
+                                  <option disabled selected>Kota</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select id="cari_kamartidur" class="form-control">
+                                  <option disabled selected>Kamar Tidur</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select id="cari_kamarmandi" class="form-control">
+                                  <option disabled selected>Kamar Mandi</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="second-row">
-                            <select>
-                                <option value="">Garasi</option>
-                            </select>
-                            <div class="price-range-wrap">
-                                <div class="price-text">
-                                    <label for="priceRange">Harga:</label>
-                                    <input type="text" id="priceRange" readonly>
-                                </div>
-                                <div id="price-range" class="slider"></div>
+                        <div class="form-group row">
+                            <div class="col">
+                                <select id="cari_garasi" class="form-control">
+                                  <option disabled selected>Garasi</option>
+                                </select>
                             </div>
-                            <div class="room-size-range">
-                                <div class="price-text">
-                                    <label for="roomsizeRange">Ukuran:</label>
-                                    <input type="text" id="roomsizeRange" readonly>
+                            <div class="col">
+                                <div class="form-row">
+                                    <select id="cari_harga" class="form-control">
+                                      <option disabled selected>Harga</option>
+                                    </select>
                                 </div>
-                                <div id="roomsize-range" class="slider"></div>
                             </div>
-                            <button type="button" class="search-btn">Cari</button>
+                            <div class="col">
+                                <div class="form-row">
+                                    <select id="cari_luas" class="form-control">
+                                      <option disabled selected>Luas</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary" style="width: 100%; height: 100%">Search</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -239,21 +262,18 @@
                     <div class="single-howit-works">
                         <img src="<?php echo base_url('assets/img/howit-works/howit-works-1.png'); ?>" alt="">
                         <h4>Cari dan Temukan Hunian</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="single-howit-works">
                         <img src="<?php echo base_url('assets/img/howit-works/howit-works-2.png'); ?>" alt="">
                         <h4>Temukan Ruang</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="single-howit-works">
                         <img src="<?php echo base_url('assets/img/howit-works/howit-works-3.png'); ?>" alt="">
                         <h4>Hubungi Agen</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
                 </div>
             </div>
@@ -480,89 +500,31 @@
     </div>
     <!-- Top Properties Section End -->
 
-    <!-- Agent Section Begin -->
-    <section class="agent-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <span>Kami Membantu Anda</span>
-                        <h2>Agen Kami</h2>
-                    </div>
-                </div>
+    <!-- Properti Di Kota Dan Provinsi Di Indonesia -->
+    <section class="spad m-0 set-bg" data-setbg="https://www.qualityquotesolutions.com/newsletter/footer-background.png">
+        <div class="container mx-auto" background-m>
+            <div class="section-title">
+                <h2>Temukan Properti Pada Kota Anda</h2>
             </div>
             <div class="row">
-                <div class="agent-carousel owl-carousel">
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-1.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Shania Agustina <span>Founder & Ceo</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-2.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Banawi Hutasoit <span>Marketing Manager</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-3.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Enteng Tampubolon <span>Company Agents</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-4.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Ismail Setiawa <span>Saler Manager</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-5.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Gara Marpaung<span>Saler Manager</span></h5>
-                        </div>
-                    </div>
+                <div class="col p-5 mx-2 bg-light rounded">
+                    <h4>Jakarta</h4>
+                </div>
+                <div class="col p-5 mx-2 bg-light rounded">
+                    <h4>Bandung</h4>
+                </div>
+                <div class="col p-5 mx-2 bg-light rounded">
+                    <h4>Bogor</h4>
+                </div>
+                <div class="col p-5 mx-2 bg-light rounded">
+                    <h4>Medan</h4>
+                </div>
+                <div class="col p-5 mx-2 bg-light rounded">
+                    <h4>Palembang</h4>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Agent Section End -->
 
     <!-- Partner Carousel Section Begin -->
     <div class="partner-section">
@@ -653,6 +615,19 @@
         </div>
     </footer>
     <!-- Footer Section End -->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+          const $valueSpan = $('.valueSpan');
+          const $value = $('#slider11');
+          $valueSpan.html($value.val());
+          $value.on('input change', () => {
+
+            $valueSpan.html($value.val());
+          });
+        });
+    </script>
 
     <!-- Js Plugins -->
     <script src="<?php echo base_url('assets/js/jquery-3.3.1.min.js'); ?>"></script>

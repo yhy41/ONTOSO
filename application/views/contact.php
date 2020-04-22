@@ -147,7 +147,7 @@
     <!-- Partner Carousel Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer-section set-bg" data-setbg="<?php echo base_url('img/footer-bg.jpg'); ?>">
+    <footer class="footer-section set-bg" data-setbg="<?php echo base_url('assets/img/footer-bg.jpg'); ?>">
         <div class="container">
             <div class="footer-text">
                 <div class="row">

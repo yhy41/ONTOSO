@@ -67,55 +67,52 @@
     <section class="contact-section">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6">
-                    
-                        <div class="offset-lg-1">
-                            <div class="contact-text">
-                            	<div class="row">
-	                                <div>
-	                                	<img src="https://id2-cdn.pgimgs.com/agent/1103804/APHO.94040962.V120B.jpg" style="width: 200px; height: 200px">
-	                                </div>
-	                                <div class="offset-md-1">
-	                                	<br>
-	                                	<h3>Bernhard Siregar</h3><br>
-	                                	<h5>Ray White Kemang Premier</h5>
-	                                </div>
-	                            </div>
-	                            <div>
-	                            	<br>
-	                            	<p>
-	                            		Sy Bernhard Siregar, konsultan properti yang berpengalaman di bidangnya.
-										Bila butuh informasi tentang properti, baik apartemen, rumah, gedung, ruko, pabrik, gudang, lahan industri/komersial dll, silahkan menghubungi saya di nomor tlp/whatssap :<br>
-										0811 96 40 47<br>
-										Saya siap membantu anda.<br>
-										Terima kasih<br><br>
-										Bernhard Siregar<br>
-										Ray White Kemang Premier<br>
-									</p>
-	                            </div>
+                <div class="col-lg-8 p-5">                   
 
+                    	<div class="row bg-light p-5">
+                            <div>
+                            	<img src="https://id2-cdn.pgimgs.com/agent/1103804/APHO.94040962.V120B.jpg" class="img-thumbnail rounded">
                             </div>
+                            <div class="offset-md-1 my-auto">
+                            	<h4>Bernhard Siregar</h4>
+                            	<h6>Ray White Kemang Premier</h6><br>
+                                <div class="btn btn-success">+62 8119 6404 7</div>
+                            </div>
+                        </div>
+
+                        <div class="row bg-light mt-3 p-5">
+                            <h4>Perkenalan</h4><br><br>
+                        	<p>
+                        		Sy Bernhard Siregar, konsultan properti yang berpengalaman di bidangnya.
+								Bila butuh informasi tentang properti, baik apartemen, rumah, gedung, ruko, pabrik, gudang, lahan industri/komersial dll.
+							</p>
+                        </div>
+                        <div class="row bg-light my-3 p-5">
+                            <h4>List Property</h4><br><br>
+                            
                         </div>
                     
                 </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-7 offset-lg-1">
-                            <div class="contact-text">
-                                <div class="section-title">
-                                    <span>Kontak</span>
-                                    <h2>Kirim Pesan</h2>
-                                </div>
-                                <form action="#" class="contact-form">
-                                    <input type="text" placeholder="Name">
-                                    <input type="text" placeholder="Email">
-                                    <textarea placeholder="Messages"></textarea>
-                                    <button type="submit" class="site-btn">Send Message</button>
-                                </form>
+                <div class="col-lg-4 pr-5">
+                    <div class="col mt-5 p-5 bg-light">
+                        <h4>Kirim Pesan</h4><br>
+                        <form>
+                            <div class="form-group row">
+                                <input class="form-control" type="text" name="nama" placeholder="Masukkan Nama">
                             </div>
-                        </div>
+                            <div class="form-group row">
+                                <input class="form-control" type="text" name="email" placeholder="Masukkan Email">
+                            </div>
+                            <div class="form-group row">
+                                <textarea class="form-control" rows="3" name="pesan" placeholder="Masukkan Pesan"></textarea> 
+                            </div>
+                            <div class="form-group row">
+                                <input class="btn btn-primary" type="submit" value="Kirim Pesan">
+                            </div>
+                        </form>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

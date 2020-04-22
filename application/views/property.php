@@ -50,91 +50,58 @@
     <!-- Header End -->
 
     <!-- Property Section Begin -->
-    <section class="property-section spad">
+    <section class="property-section pt-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="property-sidebar">
-                        <h4>Cari Property</h4>
-                        <form action="#" class="sidebar-search">
-                            <div class="sidebar-btn">
-                                <div class="bt-item">
-                                    <input type="radio" name="s-type" id="st-buy" checked>
-                                    <label for="st-buy">Beli</label>
+                <div class="col-lg-3 mr-5">
+                        <h4 class="mb-5">Cari Property</h4>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <div class="row mb-3">
+                                    <select id="cari_belisewa" class="form-control">
+                                      <option disabled selected>Beli / Sewa</option>
+                                    </select>
                                 </div>
-                                <div class="bt-item">
-                                    <input type="radio" name="s-type" id="st-rent">
-                                    <label for="st-rent">Sewa</label>
+                                <div class="row mb-3">
+                                    <select id="cari_kota" class="form-control">
+                                      <option disabled selected>Kota</option>
+                                    </select>
                                 </div>
+                                <div class="row mb-3">
+                                    <select id="cari_kamartidur" class="form-control">
+                                      <option disabled selected>Kamar Tidur</option>
+                                    </select>
+                                </div>
+                                <div class="row mb-3">
+                                    <select id="cari_kamarmandi" class="form-control">
+                                      <option disabled selected>Kamar Mandi</option>
+                                    </select>
+                                </div>
+                                <div class="row mb-3">
+                                    <select id="cari_garasi" class="form-control">
+                                      <option disabled selected>Garasi</option>
+                                    </select>
+                                </div>
+                                <div class="row mb-3">
+                                    <select id="cari_harga" class="form-control">
+                                      <option disabled selected>Harga</option>
+                                    </select>
+                                </div>
+                                <div class="row mb-4">
+                                    <select id="cari_luas" class="form-control">
+                                      <option disabled selected>Luas</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <button type="submit" class="btn btn-primary" style="width: 100%; height: 100%">Search</button>
+                                </div>
+                                
                             </div>
-                            <select>
-                                <option value="">lokasi</option>
-                            </select>
-                            <select>
-                                <option value="">Status</option>
-                            </select>
-                            <select>
-                                <option value="">Banyak Tempat Tidur</option>
-                            </select>
-                            <select>
-                                <option value="">Banyak Kamar Mandi</option>
-                            </select>
-                            <select>
-                                <option value="">Banyak Penghuni</option>
-                            </select>
-                            <div class="room-size-range">
-                                <div class="price-text">
-                                    <label for="roomsizeRangeP">Ukuran:</label>
-                                    <input type="text" id="roomsizeRangeP" readonly>
-                                </div>
-                                <div id="roomsize-range-P" class="slider"></div>
-                            </div>
-                            <div class="price-range-wrap">
-                                <div class="price-text">
-                                    <label for="priceRangeP">Harga:</label>
-                                    <input type="text" id="priceRangeP" readonly>
-                                </div>
-                                <div id="price-range-P" class="slider"></div>
-                            </div>
-                            <button type="submit" class="search-btn">Cari Property</button>
                         </form>
-                        <div class="best-agents">
-                            <h4>Best Agents</h4>
-                            <a href="#" class="ba-item">
-                                <div class="ba-pic">
-                                    <img src="<?php echo base_url('img/properties/best-agent-1.jpg'); ?>" alt="">
-                                </div>
-                                <div class="ba-text">
-                                    <h5>Lester Bradley</h5>
-                                    <span>Company Agents</span>
-                                    <p class="property-items">6 property </p>
-                                </div>
-                            </a>
-                            <a href="#" class="ba-item">
-                                <div class="ba-pic">
-                                    <img src="<?php echo base_url('img/properties/best-agent-2.jpg'); ?>" alt="">
-                                </div>
-                                <div class="ba-text">
-                                    <h5>Janie Blair</h5>
-                                    <span>Company Agents</span>
-                                    <p class="property-items">6 property </p>
-                                </div>
-                            </a>
-                            <a href="#" class="ba-item">
-                                <div class="ba-pic">
-                                    <img src="<?php echo base_url('img/properties/best-agent-3.jpg'); ?>" alt="">
-                                </div>
-                                <div class="ba-text">
-                                    <h5>Sophia Cole</h5>
-                                    <span>Marketing & Ceo</span>
-                                    <p class="property-items">6 property </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    
                 </div>
-                <div class="col-lg-9">
-                    <h4 class="property-title">Property</h4>
+                <div class="col-lg-8">
+                    <h4 class="property-title">Property(10)</h4>
                     <div class="property-list">
                         <div class="single-property-item">
                             <div class="row">
@@ -340,7 +307,7 @@
     <!-- Partner Carousel Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer-section set-bg" data-setbg="<?php echo base_url('img/footer-bg.jpg'); ?>">
+    <footer class="footer-section set-bg" data-setbg="<?php echo base_url('assets/img/footer-bg.jpg'); ?>">
         <div class="container">
             <div class="footer-text">
                 <div class="row">
