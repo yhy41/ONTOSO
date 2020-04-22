@@ -38,6 +38,7 @@
                                 <li class="navbar-brand">ONTOSO</li>
                                 <li><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
                                 <li class="active"><a href="<?php echo site_url('web/property'); ?>">Properti</a></li>
+                                <li><a href="<?php echo site_url('web/agent'); ?>">Agent</a></li>
                                 <li><a href="<?php echo site_url('web/aboutus'); ?>">Tentang Kami</a></li>
                                 <li><a href="<?php echo site_url('web/contact'); ?>">Kontak</a></li>
                             </ul>
@@ -50,9 +51,10 @@
     <!-- Header End -->
 
     <!-- Property Section Begin -->
-    <section class="property-section pt-5">
+    <section class="property-section spad">
         <div class="container">
             <div class="row">
+                <!-- cari properti -->
                 <div class="col-lg-3 mr-5">
                         <h4 class="mb-5">Cari Property</h4>
                         <form action="#" method="post">
@@ -97,11 +99,11 @@
                                 </div>
                                 
                             </div>
-                        </form>
-                    
+                        </form>                   
                 </div>
+                <!-- daftar properti -->
                 <div class="col-lg-8">
-                    <h4 class="property-title">Property(10)</h4>
+                    <h4 class="mb-5">Property (10)</h4>
                     <div class="property-list">
                         <div class="single-property-item">
                             <div class="row">

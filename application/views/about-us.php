@@ -38,6 +38,7 @@
                                 <li class="navbar-brand">ONTOSO</li>
                                 <li><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
                                 <li><a href="<?php echo site_url('web/property'); ?>">Properti</a></li>
+                                <li><a href="<?php echo site_url('web/agent'); ?>">Agent</a></li>
                                 <li class="active"><a href="<?php echo site_url('web/aboutus'); ?>">Tentang Kami</a></li>
                                 <li><a href="<?php echo site_url('web/contact'); ?>">Kontak</a></li>
                             </ul>
@@ -137,90 +138,6 @@
         </div>
     </section>
     <!-- Testimonial Section End -->
-
-    <!-- Agent Section Begin -->
-    <section class="agent-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <span>Kami Membantu Anda</span>
-                        <h2>Agen Kami</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="agent-carousel owl-carousel">
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-1.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Shania Agustina <span>Founder & Ceo</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-2.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Banawi Hutasoit <span>Marketing Manager</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-3.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Enteng Tampubolon <span>Company Agents</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-4.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Ismail Setiawa <span>Saler Manager</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-5.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Gara Marpaung<span>Saler Manager</span></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Agent Section End -->
 
     <!-- Partner Carousel Section Begin -->
     <div class="partner-section">

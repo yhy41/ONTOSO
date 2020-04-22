@@ -89,7 +89,149 @@
                         </div>
                         <div class="row bg-light my-3 p-5">
                             <h4>List Property</h4><br><br>
-                            
+                            <div class="feature-carousel owl-carousel">
+                                <div class="col-lg-4">
+                                    <div class="feature-item">
+                                        <div class="fi-pic set-bg" data-setbg="https://id2-cdn.pgimgs.com/listing/16520439/UPHO.90702579.V800/Puri-Permata-Tangerang-Indonesia.jpg">
+                                            <div class="pic-tag">
+                                                <div class="f-text">feauture</div>
+                                                <div class="s-text">Untuk Dijual</div>
+                                            </div>
+                                            <div class="feature-author">
+                                                <div class="fa-pic">
+                                                    <img src="https://id1-cdn.pgimgs.com/agent/1926053/APHO.89667089.V120B.jpg" alt="">
+                                                </div>
+                                                <div class="fa-text">
+                                                    <span>Hardiansyah Royanih</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fi-text">
+                                            <div class="inside-text">
+                                                <h4>Puri Permata</h4>
+                                                <ul>
+                                                    <li><i class="fa fa-map-marker"></i> Jl. H. Maulana Hasanudin, Cipondoh, Cipondoh, Tangerang, Banten</li>
+                                                    <li><i class="fa fa-tag"></i> Rumah</li>
+                                                </ul>
+                                                <h5 class="price">Rp. 260 jt</h5>
+                                            </div>
+                                            <ul class="room-features">
+                                                <li>
+                                                    <i class="fa fa-arrows"></i>
+                                                    <p>36 m2</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-bed"></i>
+                                                    <p>2</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-bath"></i>
+                                                    <p>1</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-car"></i>
+                                                    <p>1</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- satu features -->
+
+                                <div class="col-lg-4">
+                                    <div class="feature-item">
+                                        <div class="fi-pic set-bg" data-setbg="<?php echo base_url('assets/img/hero/hero-1.jpg'); ?>">
+                                            <div class="pic-tag">
+                                                <div class="f-text">feauture</div>
+                                                <div class="s-text">Untuk Dijual</div>
+                                            </div>
+                                            <div class="feature-author">
+                                                <div class="fa-pic">
+                                                    <img src="https://id2-cdn.pgimgs.com/agent/10796554/APHO.95169135.V120B.jpg" alt="">
+                                                </div>
+                                                <div class="fa-text">
+                                                    <span>Taofik Muliadi</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fi-text">
+                                            <div class="inside-text">
+                                                <h4>BSD Nusa Loka</h4>
+                                                <ul>
+                                                    <li><i class="fa fa-map-marker"></i> Jl. Ciater Raya, Watubela, Bsd, Tangerang, Banten</li>
+                                                    <li><i class="fa fa-tag"></i> Rumah</li>
+                                                </ul>
+                                                <h5 class="price">Rp. 680 jt</h5>
+                                            </div>
+                                            <ul class="room-features">
+                                                <li>
+                                                    <i class="fa fa-arrows"></i>
+                                                    <p>50 m2</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-bed"></i>
+                                                    <p>3</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-bath"></i>
+                                                    <p>2</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-car"></i>
+                                                    <p>1</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="feature-item">
+                                        <div class="fi-pic set-bg" data-setbg="https://id2-cdn.pgimgs.com/listing/17142295/UPHO.94585331.C200X150/Citra-Indah-Bogor-Indonesia.jpg">
+                                            <div class="pic-tag">
+                                                <div class="f-text">feauture</div>
+                                                <div class="s-text">Untuk Dijual</div>
+                                            </div>
+                                            <div class="feature-author">
+                                                <div class="fa-pic">
+                                                    <img src="https://id1-cdn.pgimgs.com/agent/10404860/APHO.94993946.V120B.jpg" alt="">
+                                                </div>
+                                                <div class="fa-text">
+                                                    <span>Jonathan Walters</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fi-text">
+                                            <div class="inside-text">
+                                                <h4>Citra Indah</h4>
+                                                <ul>
+                                                    <li><i class="fa fa-map-marker"></i> Jl. Raya Jonggol - Cileungsi KM 23.2, Jonggol, Bog, Jonggol, Bogor, Jawa Barat</li>
+                                                    <li><i class="fa fa-tag"></i> Rumah</li>
+                                                </ul>
+                                                <h5 class="price">Rp. 35 jt</h5>
+                                            </div>
+                                            <ul class="room-features">
+                                                <li>
+                                                    <i class="fa fa-arrows"></i>
+                                                    <p>50 m2</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-bed"></i>
+                                                    <p>2</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-bath"></i>
+                                                    <p>1</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-car"></i>
+                                                    <p>1</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     
                 </div>

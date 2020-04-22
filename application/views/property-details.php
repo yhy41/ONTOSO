@@ -37,6 +37,7 @@
                                 <li class="navbar-brand">ONTOSO</li>
                                 <li class="active"><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
                                 <li><a href="<?php echo site_url('web/property'); ?>">Properti</a></li>
+                                <li><a href="<?php echo site_url('web/agent'); ?>">Agent</a></li>
                                 <li><a href="<?php echo site_url('web/aboutus'); ?>">Tentang Kami</a></li>
                                 <li><a href="<?php echo site_url('web/contact'); ?>">Kontak</a></li>
                             </ul>
@@ -89,192 +90,71 @@
     <section class="property-details-section spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9">
+                <div class="col-lg-7 mt-5">
                     <div class="pd-details-text">
-                        <div class="pd-details-social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-send"></i></a>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-print"></i></a>
-                            <a href="#"><i class="fa fa-cloud-download"></i></a>
-                        </div>
-                        <div class="property-more-pic">
-                            <div class="product-pic-zoom">
-                                <img class="product-big-img" src="https://id1-cdn.pgimgs.com/listing/17228592/UPHO.95200386.V800/BSD-Nusa-Loka-Tangerang-Indonesia.jpg">
+                        <!-- image carousel -->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="https://assets0.biggerpockets.com/uploads/wordpress_blog_post/image/9112/featured_pretty-home.jpg" alt="First slide">
                             </div>
-                            <div class="product-thumbs">
-                                <div class="product-thumbs-track ps-slider owl-carousel">
-                                    <div class="pt" data-imgbigurl="https://id2-cdn.pgimgs.com/listing/17228592/UPHO.95200387.V800/BSD-Nusa-Loka-Tangerang-Indonesia.jpg"><img
-                                            src="https://id2-cdn.pgimgs.com/listing/17228592/UPHO.95200387.V800/BSD-Nusa-Loka-Tangerang-Indonesia.jpg" alt=""></div>
-                                    <div class="pt active" data-imgbigurl="img/properties/property-details-b1.jpg"><img
-                                            src="https://id1-cdn.pgimgs.com/listing/17228592/UPHO.95200388.V800/BSD-Nusa-Loka-Tangerang-Indonesia.jpg" alt=""></div>
-                                    <div class="pt" data-imgbigurl="img/properties/property-details-b3.jpg"><img
-                                            src="https://id2-cdn.pgimgs.com/listing/17228592/UPHO.95200389.V800/BSD-Nusa-Loka-Tangerang-Indonesia.jpg" alt=""></div>
-                                    <div class="pt" data-imgbigurl="img/properties/property-details-b4.jpg"><img
-                                            src="https://id1-cdn.pgimgs.com/listing/17228592/UPHO.95200390.V800/BSD-Nusa-Loka-Tangerang-Indonesia.jpg" alt=""></div>
-                                    <div class="pt" data-imgbigurl="img/properties/property-details-b5.jpg"><img
-                                            src="https://id1-cdn.pgimgs.com/listing/17228592/UPHO.95200392.V800/BSD-Nusa-Loka-Tangerang-Indonesia.jpg" alt=""></div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="https://assets0.biggerpockets.com/uploads/wordpress_blog_post/image/9112/featured_pretty-home.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="https://assets0.biggerpockets.com/uploads/wordpress_blog_post/image/9112/featured_pretty-home.jpg" alt="Third slide">
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+
+                        <!-- Overview property -->
+                        <div class="pd-desc mt-5">
+                            <h4>Overview</h4>
+                            <div class="row">
+                                <div class="col-4 p-0">
+                                    <ul class="list-group">
+                                      <li class="list-group-item">Jenis Properti </li>
+                                      <li class="list-group-item">Tipe Penjualan</li>
+                                      <li class="list-group-item">Kota</li>
+                                      <li class="list-group-item">Luas</li>
+                                      <li class="list-group-item">Kamar Tidur</li>
+                                      <li class="list-group-item">Kamar Mandi</li>
+                                      <li class="list-group-item">Garasi</li>
+                                    </ul>
+                                </div>
+                                <div class="col-8 p-0">
+                                    <ul class="list-group">
+                                      <li class="list-group-item">Jenis Properti </li>
+                                      <li class="list-group-item">Tipe Penjualan</li>
+                                      <li class="list-group-item">Kota</li>
+                                      <li class="list-group-item">Luas</li>
+                                      <li class="list-group-item">Kamar Tidur</li>
+                                      <li class="list-group-item">Kamar Mandi</li>
+                                      <li class="list-group-item">Garasi</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="pd-desc">
+
+                        <div class="pd-desc mt-5">
                             <h4>Deskripsi</h4>
-                            <p>Bismillah<br>
-                            Open house Esklusif Asri<br>
-                            Dikawasan Bsd City<br>
-                            Lokasi super strategis banget dan Termurah Di<br>
-                            Tangsel 2 lantai<br>
-
-                            Luas tanah 60 meter<br>
-                            Kamar tidur 3 ruang<br>
-                            Kamar mandi 2 ruang<br>
-                            Ruang dapur dan<br>
-                            Halaman belakang ruang terbuka<br>
-                            Carport 2 Mobil<br>
-                            Legalitas SHM<br>
-                            Harga 680 jutaan<br>
-                            Promo menarik<br>
-                            Free biaya" & free Ac untuk 5 unit pertama,survey langsung lokasi project clusternya di Green Grass Ciater kawasan strategis dan terjangkau semua akses<br>
-                            free konsultasi siap dibantu dengan senang hati<br><br>
-
-                            Seling point akses<br>
-                            5 menit st.rawa buntu<br>
-                            5 menit exit tol bsd<br>
-                            5 menit pasar modern bsd<br>
-                            5 menit eka hospital bsd<br>
-                            5 menit sekolah insani cendikia<br>
-                            10 menit Itc Bsd<br>
-                            10 menit st.sudimara<br>
-                            10 menit Aeon mall bsd<br>
-                            10 menit living word alam sutra<br>
-
-                            More info detail/Survey<br>
-                            Taofik<br>
-                            081380393885</p>
+                            <p>Free biaya" & free Ac untuk 5 unit pertama,survey langsung lokasi project clusternya di Green Grass Ciater kawasan strategis dan terjangkau semua akses, 
+                            free konsultasi siap dibantu dengan senang hati</p>
                         </div>
-                        <div class="pd-details-tab">
-                            <div class="tab-item">
-                                <ul class="nav" role="tablist">
-                                    <li>
-                                        <a class="active" data-toggle="tab" href="#tab-1" role="tab">Overview</a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="tab" href="#tab-2" role="tab">Deskripsi</a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="tab" href="#tab-3" role="tab">Amenities</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-item-content">
-                                <div class="tab-content">
-                                    <div class="tab-pane fade-in active" id="tab-1" role="tabpanel">
-                                        <div class="property-more-table">
-                                            <table class="left-table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="pt-name">Harga</td>
-                                                        <td class="p-value">Rp 680 jt</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pt-name">Tipe Properti</td>
-                                                        <td class="p-value">Rumah</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pt-name">Tahun Dibangun</td>
-                                                        <td class="p-value">2016</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pt-name">Kamar Mandi</td>
-                                                        <td class="p-value">3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pt-name">Ruangan</td>
-                                                        <td class="p-value">12</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pt-name">Garasi</td>
-                                                        <td class="p-value">1</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pt-name">Lot area</td>
-                                                        <td class="p-value">60 m2</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <table class="right-table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="pt-name">Agen</td>
-                                                        <td class="p-value">Hartanto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pt-name">Refrensi</td>
-                                                        <td class="p-value">#2019</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pt-name">Kontrak Tipe</td>
-                                                        <td class="p-value">Dijual</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pt-name">Kamar Tidur</td>
-                                                        <td class="p-value">4</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pt-name">Gudang</td>
-                                                        <td class="p-value">2</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pt-name">Area Rumah</td>
-                                                        <td class="p-value">60 m2</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="pt-name">Ukuran Gudang</td>
-                                                        <td class="p-value">20 m2</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="tab-2" role="tabpanel">
-                                        <div class="pd-table-desc">
-                                            <p>Learn how to improve your playing quality and even overall understanding
-                                                of online gaming and how you perform while playing online. Gaming online
-                                                is a huge business nowadays and that means that there are millions of
-                                                people worldwide at online game sites all the time. Many are people just
-                                                like you and me that like to play online and have fun doing it. Some of
-                                                these people enjoy it so much, that they often do not even care about
-                                                improving their skill and raising their chances of winning.</p>
-                                            <p>Learn how to improve your playing quality and even overall understanding
-                                                of online gaming and how you perform while playing online. Gaming online
-                                                is a huge business nowadays and that means that there are millions of
-                                                people worldwide at online game sites all the time. Many are people just
-                                                like you and me that like to play online and have fun doing it. Some of
-                                                these people enjoy it so much, that they often do not even care about
-                                                improving their skill and raising their chances of winning.</p>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="tab-3" role="tabpanel">
-                                        <div class="pd-table-amenities">
-                                            <p>Learn how to improve your playing quality and even overall understanding
-                                                of online gaming and how you perform while playing online. Gaming online
-                                                is a huge business nowadays and that means that there are millions of
-                                                people worldwide at online game sites all the time. Many are people just
-                                                like you and me that like to play online and have fun doing it. Some of
-                                                these people enjoy it so much, that they often do not even care about
-                                                improving their skill and raising their chances of winning.</p>
-                                            <p>Learn how to improve your playing quality and even overall understanding
-                                                of online gaming and how you perform while playing online. Gaming online
-                                                is a huge business nowadays and that means that there are millions of
-                                                people worldwide at online game sites all the time. Many are people just
-                                                like you and me that like to play online and have fun doing it. Some of
-                                                these people enjoy it so much, that they often do not even care about
-                                                improving their skill and raising their chances of winning.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="property-map">
                             <h4>Map</h4>
                             <div class="map-inside">
@@ -284,113 +164,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="property-contactus">
-                            <h4>Kontak Kami</h4>
-                            <div class="row">
-                                <div class="col-lg-5">
-                                    <div class="agent-desc">
-                                        <img src="<?php echo base_url('img/properties/agent-contact.jpg'); ?>" alt="">
-                                        <div class="agent-title">
-                                            <h5>Putri Amelia</h5>
-                                            <span>Saler Marketing</span>
-                                        </div>
-                                        <div class="agent-social">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                            <a href="#"><i class="fa fa-envelope"></i></a>
-                                        </div>
-                                        <p>Di dunia yang paham internet saat ini, sudah menjadi hal umum bagi setiap bisnis untuk memiliki situs web yang kebanyakan mereka gunakan untuk mengiklankan produk dan layanan mereka.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 offset-lg-1">
-                                    <form action="#" class="agent-contact-form">
-                                        <input type="text" placeholder="Name*">
-                                        <input type="text" placeholder="Email">
-                                        <textarea placeholder="Messages"></textarea>
-                                        <button type="submit" class="site-btn">Kirim Pesan</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="property-sidebar">
-                        <h4>Cari Properti</h4>
-                        <form action="#" class="sidebar-search">
-                            <div class="sidebar-btn">
-                                <div class="bt-item">
-                                    <input type="radio" name="s-type" id="st-buy" checked>
-                                    <label for="st-buy">Beli</label>
-                                </div>
-                                <div class="bt-item">
-                                    <input type="radio" name="s-type" id="st-rent">
-                                    <label for="st-rent">Sewa</label>
-                                </div>
+                <div class="col-lg-5">
+                    <div class="col-lg mt-5 ml-4 px-5 border-left">
+                        <h4 style="text-align: center">Agen</h4><br>
+                        <div class="card mx-auto" style="width: 17rem;">
+                          <img class="card-img-top" src="https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png" alt="Card image cap">
+                          <div class="card-body mx-auto">
+                            <h5 class="card-title">Ahmad Khoirunnufus</h5>
+                            <span>Independent Agent</span><br>
+                            <span>Lampung</span>
+                            <div class="col p-2 bg-success rounded mt-2">
+                                    <span class="ml-2" style="color: white">+6282182948172</span>
                             </div>
-                            <select>
-                                <option value="">Lokasi</option>
-                            </select>
-                            <select>
-                                <option value="">Status</option>
-                            </select>
-                            <select>
-                                <option value="">Jumlah Kamar Tidur</option>
-                            </select>
-                            <select>
-                                <option value="">Jumlah Kamar Mandi</option>
-                            </select>
-                            <div class="room-size-range">
-                                <div class="price-text">
-                                    <label for="roomsizeRangeP">Ukuran:</label>
-                                    <input type="text" id="roomsizeRangeP" readonly>
-                                </div>
-                                <div id="roomsize-range-P" class="slider"></div>
+                          </div>
+                        </div><br>
+                        <hr>
+                        <br>
+                        <h4 style="text-align: center">Kirim Pesan ke Agen</h4><br>
+                        <form>
+                            <div class="form-group row">
+                                <input class="form-control" type="text" name="nama" placeholder="Masukkan Nama">
                             </div>
-                            <div class="price-range-wrap">
-                                <div class="price-text">
-                                    <label for="priceRangeP">Harga:</label>
-                                    <input type="text" id="priceRangeP" readonly>
-                                </div>
-                                <div id="price-range-P" class="slider"></div>
+                            <div class="form-group row">
+                                <input class="form-control" type="text" name="email" placeholder="Masukkan Email">
                             </div>
-                            <button type="submit" class="search-btn">Cari Properti</button>
+                            <div class="form-group row">
+                                <textarea class="form-control" rows="3" name="pesan" placeholder="Masukkan Pesan"></textarea> 
+                            </div>
+                            <div class="form-group row">
+                                <input class="btn btn-primary" type="submit" value="Kirim Pesan">
+                            </div>
                         </form>
-                        <div class="best-agents">
-                            <h4>Agen Terbaik</h4>
-                            <a href="#" class="ba-item">
-                                <div class="ba-pic">
-                                    <img src="<?php echo base_url('img/properties/best-agent-1.jpg'); ?>" alt="">
-                                </div>
-                                <div class="ba-text">
-                                    <h5>Ahmad Subarjo</h5>
-                                    <span>Company Agents</span>
-                                    <p class="property-items">6 property </p>
-                                </div>
-                            </a>
-                            <a href="#" class="ba-item">
-                                <div class="ba-pic">
-                                    <img src="<?php echo base_url('img/properties/best-agent-2.jpg'); ?>" alt="">
-                                </div>
-                                <div class="ba-text">
-                                    <h5>Julaeha</h5>
-                                    <span>Company Agents</span>
-                                    <p class="property-items">6 property </p>
-                                </div>
-                            </a>
-                            <a href="#" class="ba-item">
-                                <div class="ba-pic">
-                                    <img src="<?php echo base_url('img/properties/best-agent-3.jpg'); ?>" alt="">
-                                </div>
-                                <div class="ba-text">
-                                    <h5>Udin</h5>
-                                    <span>Marketing & Ceo</span>
-                                    <p class="property-items">6 property </p>
-                                </div>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>

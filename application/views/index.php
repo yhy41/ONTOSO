@@ -48,6 +48,7 @@
                                 <li class="navbar-brand">ONTOSO</li>
                                 <li class="active"><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
                                 <li><a href="<?php echo site_url('web/property'); ?>">Properti</a></li>
+                                <li><a href="<?php echo site_url('web/agent'); ?>">Agent</a></li>
                                 <li><a href="<?php echo site_url('web/aboutus'); ?>">Tentang Kami</a></li>
                                 <li><a href="<?php echo site_url('web/contact'); ?>">Kontak</a></li>
                             </ul>

@@ -7,10 +7,11 @@
     <meta name="keywords" content="Azenta, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ONTOSO</title>
+    <title>Azenta | Template</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" type="text/css">
@@ -35,8 +36,9 @@
                         <nav class="main-menu">
                             <ul>
                                 <li class="navbar-brand">ONTOSO</li>
-                                <li class="active"><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
+                                <li><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
                                 <li><a href="<?php echo site_url('web/property'); ?>">Properti</a></li>
+                                <li class="active"><a href="<?php echo site_url('web/agent'); ?>">Agent</a></li>
                                 <li><a href="<?php echo site_url('web/aboutus'); ?>">Tentang Kami</a></li>
                                 <li><a href="<?php echo site_url('web/contact'); ?>">Kontak</a></li>
                             </ul>
@@ -48,119 +50,92 @@
     </header>
     <!-- Header End -->
 
-    <section class="breadcrumb-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="breadcrumb-text">
-                                <h2>Pembayaran</h2>
+    <!-- cari agen berdasarkan kota -->
+    <section class="spad m-0">
+        <div class="container mx-auto">
+            <div class="section-title">
+                <h2>Cari Agen Pada Kota Anda</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form>
+                        <div class="form-group row">
+                            <div class="col-4 ml-auto">
+                                <select class="form-control">
+                                    <option selected disabled>Pilih Agen</option>
+                                </select>
+                            </div>
+                            <div class="col-2 mr-auto">
+                                <input class="btn btn-primary" type="submit" value="Cari Agen">
+                            </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-    </section>
-    <section class="about-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 offset-lg-1">
-                    <img src="https://1.bp.blogspot.com/-pBKWWv4H0YY/V15O0ZSZO9I/AAAAAAAAAJE/Xps9eUzp6q8hLNuvYTCtm9CaiyAdiaoCACKgB/s1600/Bank-Mandiri-Logo-Vector-Image.png">
-                </div>
-                <div class="col-lg-7"><br>
-                    <p style="font-size: 18px">Pengguna yang terhormat Budi Budiman, <br><br>
-                        Batas waktu pembayaran anda adalah 23:59:46<br>
-                        Mohon selesaikan pembayaran sebelum <strong>9:51 AM 18 Apr 2020</strong><br><br>
-                        Kode Bayar Bank Mandiri : <strong>789767668769</strong>
-                        <br>
-                        Jumlah Bayar : <strong>Rp. 12000000</strong><br>
-                    </p>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Agent Section Begin -->
-    <section class="agent-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <span>Kami Membantu Anda</span>
-                        <h2>Agen Kami</h2>
+    <!-- daftar agen -->
+    <section class="spad m-0" style="background-color: #F2F4F5">
+        <div class="container mx-auto">
+            <div class="section-title">
+                <h2>Daftar Agen</h2>
+            </div>
+            <div class="row mb-4">
+
+                <div class="card mx-2" style="width: 17rem;">
+                  <img class="card-img-top" src="https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png" alt="Card image cap">
+                  <div class="card-body mx-auto">
+                    <h5 class="card-title">Ahmad Khoirunnufus</h5>
+                    <span>Independent Agent</span><br>
+                    <span>Lampung</span>
+                    <div class="col p-2 bg-success rounded mt-2">
+                            <span class="ml-2" style="color: white">+6282182948172</span>
                     </div>
+                  </div>
+                </div>
+
+                <div class="card mx-2" style="width: 17rem;">
+                  <img class="card-img-top" src="https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png" alt="Card image cap">
+                  <div class="card-body mx-auto">
+                    <h5 class="card-title">Ahmad Khoirunnufus</h5>
+                    <span>Independent Agent</span><br>
+                    <span>Lampung</span>
+                    <div class="col p-2 bg-success rounded mt-2">
+                            <span class="ml-2" style="color: white">+6282182948172</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mx-2" style="width: 17rem;">
+                  <img class="card-img-top" src="https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png" alt="Card image cap">
+                  <div class="card-body mx-auto">
+                    <h5 class="card-title">Ahmad Khoirunnufus</h5>
+                    <span>Independent Agent</span><br>
+                    <span>Lampung</span>
+                    <div class="col p-2 bg-success rounded mt-2">
+                            <span class="ml-2" style="color: white">+6282182948172</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mx-2" style="width: 17rem;">
+                  <img class="card-img-top" src="https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png" alt="Card image cap">
+                  <div class="card-body mx-auto">
+                    <h5 class="card-title">Ahmad Khoirunnufus</h5>
+                    <span>Independent Agent</span><br>
+                    <span>Lampung</span>
+                    <div class="col p-2 bg-success rounded mt-2">
+                            <span class="ml-2" style="color: white">+6282182948172</span>
+                    </div>
+                  </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="agent-carousel owl-carousel">
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-1.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Shania Agustina <span>Founder & Ceo</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-2.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Banawi Hutasoit <span>Marketing Manager</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-3.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Enteng Tampubolon <span>Company Agents</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-4.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Ismail Setiawa <span>Saler Manager</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="<?php echo base_url('assets/img/agent/agent-5.jpg'); ?>" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Gara Marpaung<span>Saler Manager</span></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </section>
-    <!-- Agent Section End -->
+    
 
     <!-- Partner Carousel Section Begin -->
     <div class="partner-section">
