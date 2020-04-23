@@ -101,167 +101,57 @@
                             </div>
                         </form>                   
                 </div>
+
                 <!-- daftar properti -->
                 <div class="col-lg-8">
-                    <h4 class="mb-5">Property (10)</h4>
+                    <h4 class="mb-5">Property (9)</h4>
                     <div class="property-list">
+                        <?php foreach ($property as $row) { ?>
+                            
+                        <!-- satu properti -->
                         <div class="single-property-item">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="property-pic">
-                                        <img src="<?php echo base_url('assets/img/properties/property-1.jpg'); ?>" alt="">
+                                        <img src="<?php echo base_url('assets/img/property/'.$row['foto_1']); ?>" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="property-text">
-                                        <div class="s-text">Untuk Di jual</div>
-                                        <h5 class="r-title">Villa Istana Bunga</h5>
+                                        <div class="s-text">Untuk <?php echo $row['dijual_disewa']; ?> </div>
+                                        <a href="<?php echo site_url('web/property_details/'.$row['id_properti']); ?>"><h5 class="r-title"><?php echo $row['nama_properti']; ?></h5></a>
                                         <div class="room-price">
                                             <span>Harga Mulai:</span>
-                                            <h5>Rp.3.0000.000.000</h5>
+                                            <h5>Rp. <?php echo $row['harga_min']; ?> Jt</h5>
                                         </div>
-                                        <div class="properties-location"><i class="icon_pin"></i>Jl. Anggrek V, Cihanjuang Rahayu, Kec. Parongpong, Kabupaten Bandung Barat, Jawa Barat 40559</div>
-                                        <p>Tempat yang asri dengan depenuhi oleh tumbuh tumbuan yang membuat anda merasa nyaman untuk tinggal disana dan memiliki akses ke amanan 24 jam,akses Ke tol 5 menit dekat dengan rumah sakit,swalayan,pusat olahraga</p>
+                                        <div class="properties-location"><i class="icon_pin"></i><?php echo $row['alamat_properti']; ?>
+                                        </div>
+                                        <p><?php echo $row['deskripsi_properti']; ?></p>
                                         <ul class="room-features">
                                             <li>
                                                 <i class="fa fa-arrows"></i>
-                                                <p>5201 sqft</p>
+                                                <p><?php echo $row['luas_max']; ?> m2</p>
                                             </li>
                                             <li>
                                                 <i class="fa fa-bed"></i>
-                                                <p>8 Kamar Tidur</p>
+                                                <p><?php echo $row['kamar_tidur']; ?> Kamar Tidur</p>
                                             </li>
                                             <li>
                                                 <i class="fa fa-bath"></i>
-                                                <p>7 Kamar Mandi</p>
+                                                <p><?php echo $row['kamar_mandi']; ?> Kamar Mandi</p>
                                             </li>
                                             <li>
                                                 <i class="fa fa-car"></i>
-                                                <p>1 Bagasi</p>
+                                                <p><?php echo $row['garasi']; ?> Garasi</p>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="single-property-item">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="property-pic">
-                                        <img src="<?php echo base_url('assets/img/properties/property-2.jpg'); ?>" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="property-text">
-                                        <div class="s-text">Untuk DI Jual</div>
-                                        <h5 class="r-title">Modern villa</h5>
-                                        <div class="room-price">
-                                            <span>Mulai Dari:</span>
-                                            <h5>Rp.10.000.800.000</h5>
-                                        </div>
-                                        <div class="properties-location"><i class="icon_pin"></i> Megamendung,Bogor
-                                           </div>
-                                        <p>modern villa terletak di Vella Hillis Bogor yang berjarak 9km daei prasasti Batutulis,serta 12km dari tugu kujang dan museum zoologi bogor.</p>
-                                        <ul class="room-features">
-                                            <li>
-                                                <i class="fa fa-arrows"></i>
-                                                <p>5201 sqft</p>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-bed"></i>
-                                                <p>8 Kamar Tidur</p>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-bath"></i>
-                                                <p>7 Kamar Mandi</p>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-car"></i>
-                                                <p>1 Bagasi</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-property-item">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="property-pic">
-                                        <img src="<?php echo base_url('assets/img/properties/property-3.jpg'); ?>" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="property-text">
-                                        <div class="s-text">Untuk Di Jual</div>
-                                        <h5 class="r-title">Green Garden</h5>
-                                        <div class="room-price">
-                                            <span>Mulai Dari:</span>
-                                            <h5>Rp.6.000.000.000</h5>
-                                        </div>
-                                        <div class="properties-location"><i class="icon_pin"></i> </div>DKI Jakarta, Jakarta Barat , Green Garden
-                                        <p>Rumah masih baru di bangun Bebas Banjir 5 menit dari Tol,Dekat dengan pusat pembelanjaan,pusat olah raga,dan dekat dengan bandara,MRT.</p>
-                                        <ul class="room-features">
-                                            <li>
-                                                <i class="fa fa-arrows"></i>
-                                                <p>5201 sqft</p>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-bed"></i>
-                                                <p>8 Kamar Tidur</p>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-bath"></i>
-                                                <p>7 Kamar Mandi</p>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-car"></i>
-                                                <p>1 Bagasi</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-property-item">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="property-pic">
-                                        <img src="<?php echo base_url('assets/img/properties/property-4.jpg'); ?>" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="property-text">
-                                        <div class="s-text">Untuk Di Jual</div>
-                                        <h5 class="r-title">CLUSTER BAMBU APUS VILLAGE</h5>
-                                        <div class="room-price">
-                                            <span>Mulai Dari:</span>
-                                            <h5>Rp.4.000.000.000</h5>
-                                        </div>
-                                        <div class="properties-location"><i class="icon_pin"></i>DKI Jakarta, Jakarta Timur , Bambu Apu</div>
-                                        <p>Rumah masih baru di bangun Bebas Banjir 5 menit dari Tol,Dekat dengan pusat pembelanjaan,pusat olah raga,dan dekat dengan bandara,MRT.</p>
-                                        <ul class="room-features">
-                                            <li>
-                                                <i class="fa fa-arrows"></i>
-                                                <p>5201 sqft</p>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-bed"></i>
-                                                <p>8 Kamar Tidur</p>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-bath"></i>
-                                                <p>7 Kamar Mandi</p>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-car"></i>
-                                                <p>1 Bagasi</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- satu property -->
+
+                        <?php } ?>                        
                     </div>
                     <div class="property-pagination">
                         <a href="#">1</a>

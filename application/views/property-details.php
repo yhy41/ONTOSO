@@ -35,8 +35,8 @@
                         <nav class="main-menu">
                             <ul>
                                 <li class="navbar-brand">ONTOSO</li>
-                                <li class="active"><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
-                                <li><a href="<?php echo site_url('web/property'); ?>">Properti</a></li>
+                                <li><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
+                                <li class="active"><a href="<?php echo site_url('web/property'); ?>">Properti</a></li>
                                 <li><a href="<?php echo site_url('web/agent'); ?>">Agent</a></li>
                                 <li><a href="<?php echo site_url('web/aboutus'); ?>">Tentang Kami</a></li>
                                 <li><a href="<?php echo site_url('web/contact'); ?>">Kontak</a></li>
@@ -50,33 +50,33 @@
     <!-- Header End -->
 
     <!-- Property Details Hero Section Begin -->
-    <section class="pd-hero-section set-bg" data-setbg="<?php echo base_url('assets/img/hero/hero-1.jpg'); ?>">
+    <section class="pd-hero-section set-bg" data-setbg="<?php echo base_url('assets/img/property/'.$properti['foto_1']); ?>">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="pd-hero-text">
-                        <p class="room-location"><i class="icon_pin"></i> Jl. Ciater Raya, Watubela, Bsd, Tangerang, Banten</p>
-                        <h2>BSD Nusa Loka</h2>
+                        <p class="room-location"><i class="icon_pin"></i> <?php echo $properti['alamat_properti']; ?></p>
+                        <h2> <?php echo $properti['nama_properti']; ?></h2>
                         <div class="room-price">
                             <span>Mulai Dari:</span>
-                                <p>Rp. 680 jt</p>
+                                <p>Rp. <?php echo $properti['harga_min']; ?> jt</p>
                             </div>
                             <ul class="room-features">
                                 <li>
                                     <i class="fa fa-arrows"></i>
-                                    <p>60 m2</p>
+                                    <p><?php echo $properti['luas_max']; ?> m2</p>
                                 </li>
                                 <li>
                                     <i class="fa fa-bed"></i>
-                                    <p>3 Kamar Tidur</p>
+                                    <p><?php echo $properti['kamar_tidur']; ?> Kamar Tidur</p>
                                 </li>
                                 <li>
                                     <i class="fa fa-bath"></i>
-                                    <p>2 Kamar Mandi</p>
+                                    <p><?php echo $properti['kamar_mandi']; ?> Kamar Mandi</p>
                                 </li>
                                 <li>
                                     <i class="fa fa-car"></i>
-                                    <p>1 Garasi</p>
+                                    <p><?php echo $properti['garasi']; ?> Garasi</p>
                             </li>
                         </ul>
                     </div>
@@ -101,13 +101,13 @@
                           </ol>
                           <div class="carousel-inner">
                             <div class="carousel-item active">
-                              <img class="d-block w-100" src="https://assets0.biggerpockets.com/uploads/wordpress_blog_post/image/9112/featured_pretty-home.jpg" alt="First slide">
+                              <img class="d-block w-100" src="<?php echo base_url('assets/img/property/'.$properti['foto_1']); ?>" alt="First slide">
                             </div>
                             <div class="carousel-item">
-                              <img class="d-block w-100" src="https://assets0.biggerpockets.com/uploads/wordpress_blog_post/image/9112/featured_pretty-home.jpg" alt="Second slide">
+                              <img class="d-block w-100" src="<?php echo base_url('assets/img/property/'.$properti['foto_2']); ?>" alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                              <img class="d-block w-100" src="https://assets0.biggerpockets.com/uploads/wordpress_blog_post/image/9112/featured_pretty-home.jpg" alt="Third slide">
+                              <img class="d-block w-100" src="<?php echo base_url('assets/img/property/'.$properti['foto_3']); ?>" alt="Third slide">
                             </div>
                           </div>
                           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -118,6 +118,11 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                           </a>
+                        </div>
+
+                        <div class="pd-desc mt-5">
+                            <h4>Deskripsi</h4>
+                            <p><?php echo $properti['deskripsi_properti']; ?></p>
                         </div>
 
                         <!-- Overview property -->
@@ -137,46 +142,31 @@
                                 </div>
                                 <div class="col-8 p-0">
                                     <ul class="list-group">
-                                      <li class="list-group-item">Jenis Properti </li>
-                                      <li class="list-group-item">Tipe Penjualan</li>
-                                      <li class="list-group-item">Kota</li>
-                                      <li class="list-group-item">Luas</li>
-                                      <li class="list-group-item">Kamar Tidur</li>
-                                      <li class="list-group-item">Kamar Mandi</li>
-                                      <li class="list-group-item">Garasi</li>
+                                      <li class="list-group-item"><?php echo $properti['jenis_properti']; ?> </li>
+                                      <li class="list-group-item"><?php echo $properti['dijual_disewa']; ?></li>
+                                      <li class="list-group-item"><?php echo $properti['kota_properti']; ?></li>
+                                      <li class="list-group-item"><?php echo $properti['luas_max']; ?></li>
+                                      <li class="list-group-item"><?php echo $properti['kamar_tidur']; ?></li>
+                                      <li class="list-group-item"><?php echo $properti['kamar_mandi']; ?></li>
+                                      <li class="list-group-item"><?php echo $properti['garasi']; ?></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="pd-desc mt-5">
-                            <h4>Deskripsi</h4>
-                            <p>Free biaya" & free Ac untuk 5 unit pertama,survey langsung lokasi project clusternya di Green Grass Ciater kawasan strategis dan terjangkau semua akses, 
-                            free konsultasi siap dibantu dengan senang hati</p>
-                        </div>
-
-                        <div class="property-map">
-                            <h4>Map</h4>
-                            <div class="map-inside">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7932.950814025002!2d106.7987143!3d-6.2008406!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1587131429071!5m2!1sid!2sid" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                <div class="icon">
-                                    <i class="fa fa-home"></i>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="col-lg mt-5 ml-4 px-5 border-left">
                         <h4 style="text-align: center">Agen</h4><br>
                         <div class="card mx-auto" style="width: 17rem;">
-                          <img class="card-img-top" src="https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png" alt="Card image cap">
+                          <img class="card-img-top" src="<?php echo base_url('assets/img/agent/'.$agen['foto']); ?>" style="height: 270px" alt="Card image cap">
                           <div class="card-body mx-auto">
-                            <h5 class="card-title">Ahmad Khoirunnufus</h5>
-                            <span>Independent Agent</span><br>
-                            <span>Lampung</span>
+                            <a href="<?php echo site_url('web/agent_details/'.$agen['id_agen']); ?>"><h5 class="card-title"><?php echo $agen['nama_agen']; ?></h5></a>
+                            <span><?php echo $agen['agensi']; ?></span><br>
+                            <span><?php echo $agen['wilayah_agen']; ?></span>
                             <div class="col p-2 bg-success rounded mt-2">
-                                    <span class="ml-2" style="color: white">+6282182948172</span>
+                                <span class="ml-2" style="color: white">+6282182948172</span>
                             </div>
                           </div>
                         </div><br>

@@ -63,6 +63,9 @@
                             <div class="col-4 ml-auto">
                                 <select class="form-control">
                                     <option selected disabled>Pilih Agen</option>
+                                    <option>Makassar</option>
+                                    <option>Bandung</option>
+                                    <option>Surabaya</option>
                                 </select>
                             </div>
                             <div class="col-2 mr-auto">
@@ -82,55 +85,23 @@
             <div class="section-title">
                 <h2>Daftar Agen</h2>
             </div>
-            <div class="row mb-4">
+            <div class="row mb-4 d-flex justify-content-center">
+                <?php foreach ($agen as $row) { ?>
 
                 <div class="card mx-2" style="width: 17rem;">
-                  <img class="card-img-top" src="https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png" alt="Card image cap">
+                  <img class="card-img-top" src="<?php echo base_url('assets/img/agent/'.$row['foto']); ?>" style="height: 270px" alt="Card image cap">
                   <div class="card-body mx-auto">
-                    <h5 class="card-title">Ahmad Khoirunnufus</h5>
-                    <span>Independent Agent</span><br>
-                    <span>Lampung</span>
+                    <h5 class="card-title"><?php echo $row['nama_agen']; ?></h5>
+                    <span><?php echo $row['agensi']; ?></span><br>
+                    <span><?php echo $row['wilayah_agen']; ?></span>
                     <div class="col p-2 bg-success rounded mt-2">
-                            <span class="ml-2" style="color: white">+6282182948172</span>
+                            <span class="ml-2" style="color: white"><?php echo $row['no_hp']; ?></span>
                     </div>
                   </div>
                 </div>
 
-                <div class="card mx-2" style="width: 17rem;">
-                  <img class="card-img-top" src="https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png" alt="Card image cap">
-                  <div class="card-body mx-auto">
-                    <h5 class="card-title">Ahmad Khoirunnufus</h5>
-                    <span>Independent Agent</span><br>
-                    <span>Lampung</span>
-                    <div class="col p-2 bg-success rounded mt-2">
-                            <span class="ml-2" style="color: white">+6282182948172</span>
-                    </div>
-                  </div>
-                </div>
+                <?php } ?>
 
-                <div class="card mx-2" style="width: 17rem;">
-                  <img class="card-img-top" src="https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png" alt="Card image cap">
-                  <div class="card-body mx-auto">
-                    <h5 class="card-title">Ahmad Khoirunnufus</h5>
-                    <span>Independent Agent</span><br>
-                    <span>Lampung</span>
-                    <div class="col p-2 bg-success rounded mt-2">
-                            <span class="ml-2" style="color: white">+6282182948172</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card mx-2" style="width: 17rem;">
-                  <img class="card-img-top" src="https://www.searchpng.com/wp-content/uploads/2019/02/Men-Profile-Image-715x657.png" alt="Card image cap">
-                  <div class="card-body mx-auto">
-                    <h5 class="card-title">Ahmad Khoirunnufus</h5>
-                    <span>Independent Agent</span><br>
-                    <span>Lampung</span>
-                    <div class="col p-2 bg-success rounded mt-2">
-                            <span class="ml-2" style="color: white">+6282182948172</span>
-                    </div>
-                  </div>
-                </div>
             </div>
             
         </div>

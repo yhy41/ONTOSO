@@ -31,6 +31,13 @@
     
     <!-- Custom Style -->
     <style>
+        .property_title{
+            color: black;
+        }
+
+        .property_title:hover{
+            color: grey;
+        }
     </style>
  
 
@@ -63,33 +70,33 @@
     <!-- Hero Section Begin -->
     <section class="hero-section">
         <div class="hero-items owl-carousel">
-            <div class="single-hero-item set-bg" data-setbg="https://sg1-cdn.pgimgs.com/developer-listing/4342318/OUPHO.114072692.V800/Summarecon-Mutiara-Makassar-Makassar-Indonesia.jpg">
+            <div class="single-hero-item set-bg" data-setbg="<?php echo base_url('assets/img/property/'.$properti[0]['foto_1']); ?>">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
                             <div class="hero-text" onclick="<?php echo base_url('application/views/property-details.php'); ?>">
-                                <p class="room-location"><i class="icon_pin"></i> Jl. Mutiara Boulevard, Exit Tol Ir. Sutami No.KM 8, Makassar, Sulawesi Selatan</p>
-                                <h2>Summarecon Mutiara<br> Makassar</h2>
+                                <p class="room-location"><i class="icon_pin"></i> <?php echo $properti[0]['alamat_properti']; ?></p>
+                                <h2><a class="property_title text-light" href="<?php echo site_url('web/property_details/'.$properti[0]['id_properti']); ?>"><?php echo $properti[0]['nama_properti']; ?></a></h2>
                                 <div class="room-price">
                                     <span>Mulai Dari:</span>
-                                    <p>Rp. 900 jt</p>
+                                    <p>Rp. <?php echo $properti[0]['harga_min']; ?> jt</p>
                                 </div>
                                 <ul class="room-features">
                                     <li>
                                         <i class="fa fa-arrows"></i>
-                                        <p>162 m2</p>
+                                        <p><?php echo $properti[0]['luas_max']; ?> m2</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-bed"></i>
-                                        <p>4 Kamar Tidur</p>
+                                        <p><?php echo $properti[0]['kamar_tidur']; ?> Kamar Tidur</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-bath"></i>
-                                        <p>3 Kamar Mandi</p>
+                                        <p><?php echo $properti[0]['kamar_mandi']; ?> Kamar Mandi</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-car"></i>
-                                        <p>1 Garasi</p>
+                                        <p><?php echo $properti[0]['garasi']; ?> Garasi</p>
                                     </li>
                                 </ul>
                             </div>
@@ -97,33 +104,33 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-item set-bg" data-setbg="<?php echo base_url('assets/img/hero/hero-1.jpg'); ?>">
+            <div class="single-hero-item set-bg" data-setbg="<?php echo base_url('assets/img/property/'.$properti[1]['foto_1']); ?>">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <div class="hero-text">
-                                <p class="room-location"><i class="icon_pin"></i> Jl. Ciater Raya, Watubela, Bsd, Tangerang, Banten</p>
-                                <h2>BSD Nusa Loka</h2>
+                            <div class="hero-text" onclick="<?php echo base_url('application/views/property-details.php'); ?>">
+                                <p class="room-location"><i class="icon_pin"></i> <?php echo $properti[1]['alamat_properti']; ?></p>
+                                <h2><a class="property_title text-light" href="<?php echo site_url('web/property_details/'.$properti[1]['id_properti']); ?>"><?php echo $properti[1]['nama_properti']; ?></a></h2>
                                 <div class="room-price">
                                     <span>Mulai Dari:</span>
-                                    <p>Rp. 680 jt</p>
+                                    <p>Rp. <?php echo $properti[1]['harga_min']; ?> jt</p>
                                 </div>
                                 <ul class="room-features">
                                     <li>
                                         <i class="fa fa-arrows"></i>
-                                        <p>60 m2</p>
+                                        <p><?php echo $properti[1]['luas_max']; ?> m2</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-bed"></i>
-                                        <p>3 Kamar Tidur</p>
+                                        <p><?php echo $properti[1]['kamar_tidur']; ?> Kamar Tidur</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-bath"></i>
-                                        <p>2 Kamar Mandi</p>
+                                        <p><?php echo $properti[1]['kamar_mandi']; ?> Kamar Mandi</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-car"></i>
-                                        <p>1 Garasi</p>
+                                        <p><?php echo $properti[1]['garasi']; ?> Garasi</p>
                                     </li>
                                 </ul>
                             </div>
@@ -131,33 +138,33 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-item set-bg" data-setbg="<?php echo base_url('assets/img/hero/hero-2.jpg'); ?>">
+            <div class="single-hero-item set-bg" data-setbg="<?php echo base_url('assets/img/property/'.$properti[7]['foto_1']); ?>">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <div class="hero-text">
-                                <p class="room-location"><i class="icon_pin"></i> Jl. Peta Selatan, Kali Deres, Jakarta, Kali Deres, Jakarta Barat, DKI Jakarta</p>
-                                <h2>Kalideres Permai</h2>
+                            <div class="hero-text" onclick="<?php echo base_url('application/views/property-details.php'); ?>">
+                                <p class="room-location"><i class="icon_pin"></i> <?php echo $properti[7]['alamat_properti']; ?></p>
+                                <h2><a class="property_title text-light" href="<?php echo site_url('web/property_details/'.$properti[7]['id_properti']); ?>"><?php echo $properti[7]['nama_properti']; ?></a></h2>
                                 <div class="room-price">
-                                    <span>Start Form:</span>
-                                    <p>Rp. 398 jt</p>
+                                    <span>Mulai Dari:</span>
+                                    <p>Rp. <?php echo $properti[7]['harga_min']; ?> jt</p>
                                 </div>
                                 <ul class="room-features">
                                     <li>
                                         <i class="fa fa-arrows"></i>
-                                        <p>60 m2</p>
+                                        <p><?php echo $properti[7]['luas_max']; ?> m2</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-bed"></i>
-                                        <p>2 Kamar Tidur</p>
+                                        <p><?php echo $properti[7]['kamar_tidur']; ?> Kamar Tidur</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-bath"></i>
-                                        <p>2 Kamar Mandi</p>
+                                        <p><?php echo $properti[7]['kamar_mandi']; ?> Kamar Mandi</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-car"></i>
-                                        <p>1 Garasi</p>
+                                        <p><?php echo $properti[7]['garasi']; ?> Garasi</p>
                                     </li>
                                 </ul>
                             </div>
@@ -169,13 +176,13 @@
         <div class="thumbnail-pic">
             <div class="thumbs owl-carousel">
                 <div class="item">
-                    <img src="https://sg1-cdn.pgimgs.com/developer-listing/4342318/OUPHO.114072692.V800/Summarecon-Mutiara-Makassar-Makassar-Indonesia.jpg" style="width: 164px; height: 94px">
+                    <img src="<?php echo base_url('assets/img/property/'.$properti[0]['foto_1']); ?>" style="width: 164px; height: 94px">
                 </div>
                 <div class="item">
-                    <img src="<?php echo base_url('assets/img/hero/hero-1.jpg'); ?>" style="width: 164px; height: 94px">
+                    <img src="<?php echo base_url('assets/img/property/'.$properti[1]['foto_1']); ?>" style="width: 164px; height: 94px">
                 </div>
                 <div class="item">
-                    <img src="<?php echo base_url('assets/img/hero/hero-2.jpg'); ?>" style="width: 164px; height: 94px">
+                    <img src="<?php echo base_url('assets/img/property/'.$properti[7]['foto_1']); ?>" style="width: 164px; height: 94px">
                 </div>
             </div>
         </div>
@@ -294,47 +301,48 @@
             </div>
             <div class="row">
                 <div class="feature-carousel owl-carousel">
+                    <!-- satu features -->
                     <div class="col-lg-4">
                         <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="https://id2-cdn.pgimgs.com/listing/16520439/UPHO.90702579.V800/Puri-Permata-Tangerang-Indonesia.jpg">
+                            <div class="fi-pic set-bg" data-setbg="<?php echo base_url('assets/img/property/'.$properti[2]['foto_1']); ?>" style="width: 360px; height: 220px">
                                 <div class="pic-tag">
                                     <div class="f-text">feauture</div>
-                                    <div class="s-text">Untuk Dijual</div>
+                                    <div class="s-text">Untuk <?php echo $properti[2]['dijual_disewa']; ?></div>
                                 </div>
                                 <div class="feature-author">
                                     <div class="fa-pic">
-                                        <img src="https://id1-cdn.pgimgs.com/agent/1926053/APHO.89667089.V120B.jpg" alt="">
+                                        <img src="<?php echo base_url('assets/img/agent/'.$agen[0]['foto']); ?>" alt="">
                                     </div>
                                     <div class="fa-text">
-                                        <span>Hardiansyah Royanih</span>
+                                        <span> <?php echo $agen[0]['nama_agen']; ?> </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="fi-text">
                                 <div class="inside-text">
-                                    <h4>Puri Permata</h4>
+                                    <h4><a class="property_title" href="<?php echo site_url('web/property_details/'.$properti[2]['id_properti']); ?>"><?php echo $properti[2]['nama_properti']; ?></a></h4>
                                     <ul>
-                                        <li><i class="fa fa-map-marker"></i> Jl. H. Maulana Hasanudin, Cipondoh, Cipondoh, Tangerang, Banten</li>
-                                        <li><i class="fa fa-tag"></i> Rumah</li>
+                                        <li><i class="fa fa-map-marker"></i> <?php echo $properti[2]['alamat_properti']; ?></li>
+                                        <li><i class="fa fa-tag"></i> <?php echo $properti[2]['jenis_properti']; ?></li>
                                     </ul>
-                                    <h5 class="price">Rp. 260 jt</h5>
+                                    <h5 class="price">Rp. <?php echo $properti[2]['harga_min']; ?> jt</h5>
                                 </div>
                                 <ul class="room-features">
                                     <li>
                                         <i class="fa fa-arrows"></i>
-                                        <p>36 m2</p>
+                                        <p><?php echo $properti[2]['luas_max']; ?> m2</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-bed"></i>
-                                        <p>2</p>
+                                        <p><?php echo $properti[2]['kamar_tidur']; ?></p>
                                     </li>
                                     <li>
                                         <i class="fa fa-bath"></i>
-                                        <p>1</p>
+                                        <p><?php echo $properti[2]['kamar_mandi']; ?></p>
                                     </li>
                                     <li>
                                         <i class="fa fa-car"></i>
-                                        <p>1</p>
+                                        <p><?php echo $properti[2]['garasi']; ?></p>
                                     </li>
                                 </ul>
                             </div>
@@ -342,98 +350,103 @@
                     </div>
                     <!-- satu features -->
 
+                    <!-- satu features -->
                     <div class="col-lg-4">
                         <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="<?php echo base_url('assets/img/hero/hero-1.jpg'); ?>">
+                            <div class="fi-pic set-bg" data-setbg="<?php echo base_url('assets/img/property/'.$properti[3]['foto_1']); ?>" style="width: 360px; height: 220px">
                                 <div class="pic-tag">
                                     <div class="f-text">feauture</div>
-                                    <div class="s-text">Untuk Dijual</div>
+                                    <div class="s-text">Untuk <?php echo $properti[3]['dijual_disewa']; ?></div>
                                 </div>
                                 <div class="feature-author">
                                     <div class="fa-pic">
-                                        <img src="https://id2-cdn.pgimgs.com/agent/10796554/APHO.95169135.V120B.jpg" alt="">
+                                        <img src="<?php echo base_url('assets/img/agent/'.$agen[1]['foto']); ?>" alt="">
                                     </div>
                                     <div class="fa-text">
-                                        <span>Taofik Muliadi</span>
+                                        <span> <?php echo $agen[1]['nama_agen']; ?> </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="fi-text">
                                 <div class="inside-text">
-                                    <h4>BSD Nusa Loka</h4>
+                                    <h4><a class="property_title" href="<?php echo site_url('web/property_details/'.$properti[3]['id_properti']); ?>"><?php echo $properti[3]['nama_properti']; ?></a></h4>
                                     <ul>
-                                        <li><i class="fa fa-map-marker"></i> Jl. Ciater Raya, Watubela, Bsd, Tangerang, Banten</li>
-                                        <li><i class="fa fa-tag"></i> Rumah</li>
+                                        <li><i class="fa fa-map-marker"></i> <?php echo $properti[3]['alamat_properti']; ?></li>
+                                        <li><i class="fa fa-tag"></i> <?php echo $properti[3]['jenis_properti']; ?></li>
                                     </ul>
-                                    <h5 class="price">Rp. 680 jt</h5>
+                                    <h5 class="price">Rp. <?php echo $properti[3]['harga_min']; ?> jt</h5>
                                 </div>
                                 <ul class="room-features">
                                     <li>
                                         <i class="fa fa-arrows"></i>
-                                        <p>50 m2</p>
+                                        <p><?php echo $properti[3]['luas_max']; ?> m2</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-bed"></i>
-                                        <p>3</p>
+                                        <p><?php echo $properti[3]['kamar_tidur']; ?></p>
                                     </li>
                                     <li>
                                         <i class="fa fa-bath"></i>
-                                        <p>2</p>
+                                        <p><?php echo $properti[3]['kamar_mandi']; ?></p>
                                     </li>
                                     <li>
                                         <i class="fa fa-car"></i>
-                                        <p>1</p>
+                                        <p><?php echo $properti[3]['garasi']; ?></p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+                    <!-- satu features -->
+
+                    <!-- satu features -->
                     <div class="col-lg-4">
                         <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="https://id2-cdn.pgimgs.com/listing/17142295/UPHO.94585331.C200X150/Citra-Indah-Bogor-Indonesia.jpg">
+                            <div class="fi-pic set-bg" data-setbg="<?php echo base_url('assets/img/property/'.$properti[8]['foto_1']); ?>" style="width: 360px; height: 220px">
                                 <div class="pic-tag">
                                     <div class="f-text">feauture</div>
-                                    <div class="s-text">Untuk Dijual</div>
+                                    <div class="s-text">Untuk <?php echo $properti[8]['dijual_disewa']; ?></div>
                                 </div>
                                 <div class="feature-author">
                                     <div class="fa-pic">
-                                        <img src="https://id1-cdn.pgimgs.com/agent/10404860/APHO.94993946.V120B.jpg" alt="">
+                                        <img src="<?php echo base_url('assets/img/agent/'.$agen[2]['foto']); ?>" alt="">
                                     </div>
                                     <div class="fa-text">
-                                        <span>Jonathan Walters</span>
+                                        <span> <?php echo $agen[2]['nama_agen']; ?> </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="fi-text">
                                 <div class="inside-text">
-                                    <h4>Citra Indah</h4>
+                                    <h4><a class="property_title" href="<?php echo site_url('web/property_details/'.$properti[8]['id_properti']); ?>"><?php echo $properti[8]['nama_properti']; ?></a></h4>
                                     <ul>
-                                        <li><i class="fa fa-map-marker"></i> Jl. Raya Jonggol - Cileungsi KM 23.2, Jonggol, Bog, Jonggol, Bogor, Jawa Barat</li>
-                                        <li><i class="fa fa-tag"></i> Rumah</li>
+                                        <li><i class="fa fa-map-marker"></i> <?php echo $properti[8]['alamat_properti']; ?></li>
+                                        <li><i class="fa fa-tag"></i> <?php echo $properti[8]['jenis_properti']; ?></li>
                                     </ul>
-                                    <h5 class="price">Rp. 35 jt</h5>
+                                    <h5 class="price">Rp. <?php echo $properti[8]['harga_min']; ?> jt</h5>
                                 </div>
                                 <ul class="room-features">
                                     <li>
                                         <i class="fa fa-arrows"></i>
-                                        <p>50 m2</p>
+                                        <p><?php echo $properti[8]['luas_max']; ?> m2</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-bed"></i>
-                                        <p>2</p>
+                                        <p><?php echo $properti[8]['kamar_tidur']; ?></p>
                                     </li>
                                     <li>
                                         <i class="fa fa-bath"></i>
-                                        <p>1</p>
+                                        <p><?php echo $properti[8]['kamar_mandi']; ?></p>
                                     </li>
                                     <li>
                                         <i class="fa fa-car"></i>
-                                        <p>1</p>
+                                        <p><?php echo $properti[8]['garasi']; ?></p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+                    <!-- satu features -->
                 </div>
             </div>
         </div>
@@ -450,7 +463,7 @@
                             <span>Properti Terbaik Untuk Anda</span>
                             <h2>Properti Terbaik</h2>
                         </div>
-                        <a href="#" class="top-property-all">Tampilkan Semua Properti</a>
+                        <a href="<?php echo base_url('web/property'); ?>" class="top-property-all">Tampilkan Semua Properti</a>
                     </div>
                 </div>
             </div>
@@ -461,35 +474,74 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="stp-pic">
-                                <img src="https://sg2-cdn.pgimgs.com/developer-listing/4316217/OUPHO.112335039.V800/Lavon-2-Tangerang-Indonesia.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/property/'.$properti[0]['foto_1']); ?>" alt="">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="stp-text">
-                                <div class="s-text">Untuk Dijual</div>
-                                <h2>Lavon 2</h2>
+                                <div class="s-text">Untuk <?php echo $properti[0]['dijual_disewa']; ?></div>
+                                <h2><a class="property_title" href="<?php echo site_url('web/property_details/'.$properti[0]['id_properti']); ?>"><?php echo $properti[0]['nama_properti']; ?></a></h2>
                                 <div class="room-price">
                                     <span>Mulai Dari:</span>
-                                    <h4>Rp. 1,3 M</h4>
+                                    <h4>Rp. <?php echo $properti[0]['harga_min']; ?> Jt</h4>
                                 </div>
-                                <div class="properties-location"><i class="icon_pin"></i> Jl. Boulevard No 19, Suvarna Sutera, Pasar Kemis, Tangerang, Banten</div>
-                                <p>Lavon 1 berada pada lahan seluas 60 ha dan saat ini bisa di katakan sudah hampir SOLD OUT dan Lavon SwanCity saat ini sedang memasarkan Lavon 2 di atas lahan seluas 74 Ha.</p>
-                                <ul class="room-features">
-                                    <li>
+                                <div class="properties-location"><i class="icon_pin"></i> <?php echo $properti[0]['alamat_properti']; ?></div>
+                                <p><?php echo $properti[0]['deskripsi_properti']; ?></p>
+                                <ul class="room-features d-flex justify-content-between">
+                                    <li class="m-0">
                                         <i class="fa fa-arrows"></i>
-                                        <p>124 m2</p>
+                                        <p><?php echo $properti[0]['luas_max']; ?> m2</p>
                                     </li>
-                                    <li>
+                                    <li class="m-0">
                                         <i class="fa fa-bed"></i>
-                                        <p>4 Kamar Tidur</p>
+                                        <p><?php echo $properti[0]['kamar_tidur']; ?> Kamar Tidur</p>
                                     </li>
-                                    <li>
+                                    <li class="m-0">
                                         <i class="fa fa-bath"></i>
-                                        <p>3 Kamar Mandi</p>
+                                        <p><?php echo $properti[0]['kamar_mandi']; ?> Kamar Mandi</p>
                                     </li>
-                                    <li>
+                                    <li class="m-0">
                                         <i class="fa fa-car"></i>
-                                        <p>2 Garasi</p>
+                                        <p><?php echo $properti[0]['garasi']; ?> Garasi</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-top-properties">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="stp-pic">
+                                <img src="<?php echo base_url('assets/img/property/'.$properti[1]['foto_1']); ?>" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="stp-text">
+                                <div class="s-text">Untuk <?php echo $properti[1]['dijual_disewa']; ?></div>
+                                <h2><a class="property_title" href="<?php echo site_url('web/property_details/'.$properti[1]['id_properti']); ?>"><?php echo $properti[1]['nama_properti']; ?></a></h2>
+                                <div class="room-price">
+                                    <span>Mulai Dari:</span>
+                                    <h4>Rp. <?php echo $properti[1]['harga_min']; ?> Jt</h4>
+                                </div>
+                                <div class="properties-location"><i class="icon_pin"></i> <?php echo $properti[1]['alamat_properti']; ?></div>
+                                <p><?php echo $properti[1]['deskripsi_properti']; ?></p>
+                                <ul class="room-features d-flex justify-content-between">
+                                    <li class="m-0">
+                                        <i class="fa fa-arrows"></i>
+                                        <p><?php echo $properti[1]['luas_max']; ?> m2</p>
+                                    </li>
+                                    <li class="m-0">
+                                        <i class="fa fa-bed"></i>
+                                        <p><?php echo $properti[1]['kamar_tidur']; ?> Kamar Tidur</p>
+                                    </li>
+                                    <li class="m-0">
+                                        <i class="fa fa-bath"></i>
+                                        <p><?php echo $properti[1]['kamar_mandi']; ?> Kamar Mandi</p>
+                                    </li>
+                                    <li class="m-0">
+                                        <i class="fa fa-car"></i>
+                                        <p><?php echo $properti[1]['garasi']; ?> Garasi</p>
                                     </li>
                                 </ul>
                             </div>
@@ -507,22 +559,16 @@
             <div class="section-title">
                 <h2>Temukan Properti Pada Kota Anda</h2>
             </div>
-            <div class="row">
-                <div class="col p-5 mx-2 bg-light rounded">
-                    <h4>Jakarta</h4>
-                </div>
-                <div class="col p-5 mx-2 bg-light rounded">
+            <div class="d-flex justify-content-center">
+                <button class="col-2 mx-2 bg-light btn">
+                    <h4>Makassar</h4>
+                </button>
+                <button class="col-2 mx-2 bg-light btn">
                     <h4>Bandung</h4>
-                </div>
-                <div class="col p-5 mx-2 bg-light rounded">
-                    <h4>Bogor</h4>
-                </div>
-                <div class="col p-5 mx-2 bg-light rounded">
-                    <h4>Medan</h4>
-                </div>
-                <div class="col p-5 mx-2 bg-light rounded">
-                    <h4>Palembang</h4>
-                </div>
+                </button>
+                <button class="col-2  mx-2 bg-light btn">
+                    <h4>Surabaya</h4>
+                </button>
             </div>
         </div>
     </section>

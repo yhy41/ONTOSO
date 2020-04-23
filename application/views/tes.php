@@ -1,0 +1,1 @@
+<?php echo $properti['nama_properti']; ?>
