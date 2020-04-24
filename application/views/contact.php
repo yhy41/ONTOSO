@@ -7,7 +7,7 @@
     <meta name="keywords" content="Azenta, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Azenta | Template</title>
+    <title>ONTOSO</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
@@ -98,7 +98,7 @@
                                     <input type="text" placeholder="Email">
                                     <input type="text" placeholder="Website">
                                     <textarea placeholder="Messages"></textarea>
-                                    <button type="submit" class="site-btn">Send Message</button>
+                                    <button onclick="kirimPesan()" class="site-btn">Send Message</button>
                                 </form>
                             </div>
                         </div>
@@ -161,15 +161,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 offset-lg-1">
-                        <div class="footer-widget">
-                            <h4>Kota Properti</h4>
-                            <ul>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Jakarta</a></li>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Bandung</a></li>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Bogor</a></li>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Medan</a></li>
-                            </ul>
-                        </div>
+                        
                     </div>
                     <div class="col-lg-2">
                         <div class="footer-widget">
@@ -198,6 +190,11 @@
         </div>
     </footer>
     <!-- Footer Section End -->
+    <script type="text/javascript">
+        function kirimPesan(){
+            alert('Pesan Berhasil Dikirim');
+        }
+    </script>
 
     <!-- Js Plugins -->
     <script src="<?php echo base_url('assets/js/jquery-3.3.1.min.js'); ?>"></script>

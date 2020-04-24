@@ -149,7 +149,7 @@
                 <div class="col-lg-4 pr-5">
                     <div class="col mt-5 p-5 bg-light">
                         <h4>Kirim Pesan</h4><br>
-                        <form>
+                        <form action="#">
                             <div class="form-group row">
                                 <input class="form-control" type="text" name="nama" placeholder="Masukkan Nama">
                             </div>
@@ -160,7 +160,7 @@
                                 <textarea class="form-control" rows="3" name="pesan" placeholder="Masukkan Pesan"></textarea> 
                             </div>
                             <div class="form-group row">
-                                <input class="btn btn-primary" type="submit" value="Kirim Pesan">
+                                <input class="btn btn-primary" onclick="kirimPesan()" value="Kirim Pesan">
                             </div>
                         </form>
                     </div>
@@ -223,15 +223,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 offset-lg-1">
-                        <div class="footer-widget">
-                            <h4>Kota Properti</h4>
-                            <ul>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Jakarta</a></li>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Bandung</a></li>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Bogor</a></li>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Medan</a></li>
-                            </ul>
-                        </div>
+                        
                     </div>
                     <div class="col-lg-2">
                         <div class="footer-widget">
@@ -260,6 +252,11 @@
         </div>
     </footer>
     <!-- Footer Section End -->
+    <script type="text/javascript">
+        function kirimPesan(){
+            alert('Pesan Berhasil Dikirim');
+        }
+    </script>
 
     <!-- Js Plugins -->
     <script src="<?php echo base_url('assets/js/jquery-3.3.1.min.js'); ?>"></script>

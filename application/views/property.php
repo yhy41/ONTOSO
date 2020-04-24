@@ -7,7 +7,7 @@
     <meta name="keywords" content="Azenta, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ontoso</title>
+    <title>ONTOSO</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
@@ -57,49 +57,94 @@
                 <!-- cari properti -->
                 <div class="col-lg-3 mr-5">
                         <h4 class="mb-5">Cari Property</h4>
-                        <form action="#" method="post">
-                            <div class="form-group">
-                                <div class="row mb-3">
-                                    <select id="cari_belisewa" class="form-control">
+                        <form action="<?php echo site_url('web/search_property'); ?>" method="post"> 
+                        <div class="form-group mb-4">
+                            <div class="form-group row">
+                                    <select id="cari_belisewa" name="dijual_disewa" class="form-control">
                                       <option disabled selected>Beli / Sewa</option>
+                                      <option value="Dijual">Beli</option>
+                                      <option value="Disewa">Sewa</option>
+                                      <option value="Semua">Semua</option>
                                     </select>
                                 </div>
-                                <div class="row mb-3">
-                                    <select id="cari_kota" class="form-control">
-                                      <option disabled selected>Kota</option>
-                                    </select>
-                                </div>
-                                <div class="row mb-3">
-                                    <select id="cari_kamartidur" class="form-control">
-                                      <option disabled selected>Kamar Tidur</option>
-                                    </select>
-                                </div>
-                                <div class="row mb-3">
-                                    <select id="cari_kamarmandi" class="form-control">
-                                      <option disabled selected>Kamar Mandi</option>
-                                    </select>
-                                </div>
-                                <div class="row mb-3">
-                                    <select id="cari_garasi" class="form-control">
-                                      <option disabled selected>Garasi</option>
-                                    </select>
-                                </div>
-                                <div class="row mb-3">
-                                    <select id="cari_harga" class="form-control">
-                                      <option disabled selected>Harga</option>
-                                    </select>
-                                </div>
-                                <div class="row mb-4">
-                                    <select id="cari_luas" class="form-control">
-                                      <option disabled selected>Luas</option>
-                                    </select>
-                                </div>
-                                <div class="row">
-                                    <button type="submit" class="btn btn-primary" style="width: 100%; height: 100%">Search</button>
-                                </div>
-                                
+                            <div class="form-group row">
+                                <select id="cari_kota" name="kota_properti" class="form-control">
+                                  <option disabled selected>Kota</option>
+                                  <option>Makassar</option>
+                                  <option>Tanggerang</option>
+                                  <option>Jakarta</option>
+                                  <option>Bandung</option>
+                                  <option>Surabaya</option>
+                                  <option value="Semua">Semua</option>
+                                </select>
                             </div>
-                        </form>                   
+                            <div class="form-group row">
+                                <select id="cari_kamartidur" name="kamar_tidur" class="form-control">
+                                  <option disabled selected>Kamar Tidur</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="Semua">Semua</option>
+                                </select>
+                            </div>
+                            <div class="form-group row">
+                                <select id="cari_kamarmandi" name="kamar_mandi" class="form-control">
+                                  <option disabled selected>Kamar Mandi</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="Semua">Semua</option>
+                                </select>
+                            </div>
+                            <div class="form-group row">
+                                <select id="cari_garasi" name="garasi" class="form-control">
+                                  <option disabled selected>Garasi</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="Semua">Semua</option>
+                                </select>
+                            </div>
+                            <div class="form-group row">
+                                    <select id="cari_harga" name="harga" class="form-control">
+                                      <option disabled selected>Harga</option>
+                                      <option value="<100">Kurang Dari 100 Juta</option>
+                                      <option value="100-200">100 - 200 Juta</option>
+                                      <option value="201-300">201 - 300 Juta</option>
+                                      <option value="301-400">301 - 400 Juta</option>
+                                      <option value="401-500">401 - 500 Juta</option>
+                                      <option value="501-600">501 - 600 Juta</option>
+                                      <option value="601-700">601 - 700 Juta</option>
+                                      <option value="701-800">701 - 800 Juta</option>
+                                      <option value="801-900">801 - 900 Juta</option>
+                                      <option value="901-1000">901 - 1000 Juta</option>
+                                      <option value=">1000">Lebih Besar Dari 1 M</option>
+                                      <option value="Semua">Semua</option>
+                                    </select>
+                            </div>
+                            <div class="form-group row">
+                                    <select id="cari_luas" name="luas" class="form-control">
+                                      <option disabled selected>Luas</option>
+                                      <option value="<100">Kurang Dari 100 m2</option>
+                                      <option value="100-200">100 - 200 m2</option>
+                                      <option value="201-300">201 - 300 m2</option>
+                                      <option value="301-400">301 - 400 m2</option>
+                                      <option value="401-500">401 - 500 m2</option>
+                                      <option value=">500">Lebih Besar Dari 600 m2</option>
+                                      <option value="Semua">Semua</option>
+                                    </select>
+                            </div>
+                            <div class="row">
+                                <button type="submit" class="btn btn-primary" style="width: 100%; height: 100%">Search</button>
+                            </div>
+                        </div>
+                    </form>                  
                 </div>
 
                 <!-- daftar properti -->
@@ -216,15 +261,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 offset-lg-1">
-                        <div class="footer-widget">
-                            <h4>Kota Properti</h4>
-                            <ul>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Jakarta</a></li>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Bandung</a></li>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Bogor</a></li>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Medan</a></li>
-                            </ul>
-                        </div>
+                         
                     </div>
                     <div class="col-lg-2">
                         <div class="footer-widget">

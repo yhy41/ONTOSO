@@ -187,15 +187,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 offset-lg-1">
-                        <div class="footer-widget">
-                            <h4>Kota Properti</h4>
-                            <ul>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Jakarta</a></li>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Bandung</a></li>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Bogor</a></li>
-                                <li><i class="fa fa-caret-right"></i> <a href="#">Medan</a></li>
-                            </ul>
-                        </div>
+                        
                     </div>
                     <div class="col-lg-2">
                         <div class="footer-widget">
