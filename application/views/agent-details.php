@@ -36,8 +36,9 @@
                         <nav class="main-menu">
                             <ul>
                                 <li class="navbar-brand">ONTOSO</li>
-                                <li class="active"><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
+                                <li><a href="<?php echo site_url('web/index'); ?>">Home</a></li>
                                 <li><a href="<?php echo site_url('web/property'); ?>">Properti</a></li>
+                                <li class="active"><a href="<?php echo site_url('web/agent'); ?>">Agent</a></li>
                                 <li><a href="<?php echo site_url('web/aboutus'); ?>">Tentang Kami</a></li>
                                 <li><a href="<?php echo site_url('web/contact'); ?>">Kontak</a></li>
                             </ul>
@@ -110,7 +111,7 @@
                                         </div>
                                         <div class="fi-text">
                                             <div class="inside-text">
-                                                <h4><?php echo $row['nama_properti']; ?></h4>
+                                                <h4><a class="text-dark" href="<?php echo site_url('web/property_details/'.$row['id_properti']); ?>"><?php echo $row['nama_properti']; ?></a></h4>
                                                 <ul>
                                                     <li><i class="fa fa-map-marker"></i> <?php echo $row['alamat_properti']; ?></li>
                                                     <li><i class="fa fa-tag"></i> <?php echo $row['jenis_properti']; ?></li>

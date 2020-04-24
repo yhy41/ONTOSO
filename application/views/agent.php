@@ -51,7 +51,7 @@
     <!-- Header End -->
 
     <!-- cari agen berdasarkan kota -->
-    <section class="spad m-0">
+    <!-- <section class="spad m-0">
         <div class="container mx-auto">
             <div class="section-title">
                 <h2>Cari Agen Pada Kota Anda</h2>
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- daftar agen -->
     <section class="spad m-0" style="background-color: #F2F4F5">
@@ -91,7 +91,7 @@
                 <div class="card mx-2" style="width: 17rem;">
                   <img class="card-img-top" src="<?php echo base_url('assets/img/agent/'.$row['foto']); ?>" style="height: 270px" alt="Card image cap">
                   <div class="card-body mx-auto">
-                    <h5 class="card-title"><?php echo $row['nama_agen']; ?></h5>
+                    <a href="<?php echo site_url('web/agent_details/'.$row['id_agen']); ?>"><h5 class="card-title"><?php echo $row['nama_agen']; ?></h5></a>
                     <span><?php echo $row['agensi']; ?></span><br>
                     <span><?php echo $row['wilayah_agen']; ?></span>
                     <div class="col p-2 bg-success rounded mt-2">

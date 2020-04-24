@@ -104,7 +104,7 @@
 
                 <!-- daftar properti -->
                 <div class="col-lg-8">
-                    <h4 class="mb-5">Property (9)</h4>
+                    <h4 class="mb-5">Daftar Properti</h4>
                     <div class="property-list">
                         <?php foreach ($property as $row) { ?>
                             
